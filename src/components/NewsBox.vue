@@ -1,20 +1,16 @@
 <template>
     <div id="newsBox" class="mainBox">
-        
         <header class="teal headerBox">
             <p class="title">{{title}}</p>
         </header>
-        <article style="padding:2px;">
-            <img class="articleImage" v-bind:src="imageLink" alt="image">
+        <article style="padding:4px;">
+            <img class="articleImage" v-bind:src="imageSrc" v-bind:alt="imageAltText">
             <p class="articleBody">{{article}}</p>
 
             <div align="right">
                 <a class="button" v-bind:href="fullArticleLink">Full article</a>
             </div>
         </article>
-        <footer>
-            
-        </footer>
     </div>
 </template>
 
@@ -26,7 +22,8 @@ export default {
         title: String,
         fullArticleLink: String,
         article: String,
-        imageLink: String
+        imageSrc: String,
+        imageAltText: String
     }
 }
 </script>
@@ -36,9 +33,6 @@ export default {
 {
     float:left;
     margin-right:2px;
-    border-style:solid;
-    border-width:0.5px;
-    border-color:black;
     max-height:150px;
     max-width:150px;
 }
@@ -46,7 +40,19 @@ export default {
 .articleBody
 {
     margin-bottom:2px;
-    min-height: 110px;
+    min-height: 130px;
+    padding:4px;
+}
+
+.button
+{
+    width: 200px;
+    height: 30px;
+}
+
+.button:hover
+{
+    background-color: azure;
 }
 
 .mainBox
@@ -58,6 +64,7 @@ export default {
     border-width:1px;
     border-radius:5px;
     text-align:left;
+    margin-bottom: 10px;
 }
 
 .headerBox
@@ -65,5 +72,6 @@ export default {
     height:50px;
     border-top-left-radius:5px;
     border-top-right-radius:5px;
+    padding:4px;
 }
 </style>
