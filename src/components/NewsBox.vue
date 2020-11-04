@@ -46,6 +46,7 @@ export default {
 .articleBody
 {
     margin-bottom:2px;
+    min-height: 110px;
 }
 
 .mainBox
