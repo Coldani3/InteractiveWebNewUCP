@@ -1,8 +1,9 @@
 <template>
     <div id="navBar">
-        <button v-on:click="toggleDisplayed" class="dark-teal">TODO: HAMBURGER</button>
+        <button v-on:click="toggleDisplayed" class="dark-teal hamburgerButton">TODO: HAMBURGER</button>
         <div class="dark-teal mainBox" v-if="expanded">
             <!-- TODO: Somehow get the links and display them -->
+            <a class="link" v-for="(name, link) in links" v-bind:key="link" v-bind:href="link">{{name}}</a>
         </div>
     </div>
 </template>
@@ -10,23 +11,26 @@
 <script>
 export default {
     el: "#navBar",
+    name: "NavBar",
     props: {
-        expandedDefault: false
+         expandedDefault: Boolean
     },
-    data()
-    {
+    data() {
         return {
-            expanded: expandedDefault
-        }
+            links: {
+                "Home": "https://www.google.com/"
+            },
+            expanded: this.expandedDefault,
+        };
     },
     methods: {
         setDisplayed(isExpanded)
         {
-            expanded = isExpanded;
+            this.expanded = isExpanded;
         },
         toggleDisplayed()
         {
-            expanded = !expanded;
+            this.expanded = !this.expanded;
         }
     }
 }
@@ -47,5 +51,9 @@ export default {
 
 .link:visited {
     color: blueviolet;
+}
+
+.hamburgerButton {
+
 }
 </style>

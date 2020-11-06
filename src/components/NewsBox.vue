@@ -16,7 +16,7 @@
 
 <script>
 export default {
-    el: "newsBox",
+    el: "#newsBox",
     name: "NewsBox",
     props: {
         title: String,
