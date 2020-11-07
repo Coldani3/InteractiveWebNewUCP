@@ -25,7 +25,11 @@ export default {
         return {
             links: {
                 "Home": "https://www.google.com/",
-                "Test": "https://www.youtube.com/"
+                "Course Search": "",
+                "COVID Information": "",
+                "Contact Us": "",
+                "Apply": "",
+                "Help and Support": "",
             },
             expanded: this.expandedDefault,
             boxHeight: this.expandedDefault ? "100%" : "auto",
@@ -53,7 +57,7 @@ export default {
 
 <style scoped>
 .mainBox {
-    width: 200px;
+    width: 150px;
     height: 100%;
     align-content: left;
     
@@ -68,17 +72,20 @@ export default {
 }
 
 .link {
-    color: lightseagreen;
+    color: white;
     font-size: 18px;
     text-emphasis: bolder;
     text-align: left;
-    padding-left: 4px;
+    padding-left: 15px;
     padding-right: 4px;
+    margin-bottom: 4px;
 }
 
 .hamburgerButton {
     float: left;
-    border-color: black;
+    /* Has weird white border otherwise */
+    color: white;
+    border-color: #005c6e;
     border-width: 1px;
     border-radius: 0px;
     margin: 0px;

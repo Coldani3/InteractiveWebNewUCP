@@ -57,8 +57,8 @@ export default {
 
 .mainBox
 {
-    margin-left:10px;
-    margin-right:10px;
+    margin-left:4px;
+    margin-right:9px;
     border-style:solid;
     border-color:black;
     border-width:1px;
@@ -69,7 +69,7 @@ export default {
 
 .headerBox
 {
-    height:50px;
+    height: 50px;
     border-top-left-radius:5px;
     border-top-right-radius:5px;
     padding:4px;
