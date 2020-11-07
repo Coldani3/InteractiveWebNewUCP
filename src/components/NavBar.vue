@@ -1,7 +1,8 @@
 <template>
-    <div id="navBar" align="left">
+    <div id="navBar" align="left" class="dark-teal mainBox" v-bind:style="{ height: boxSize }">
         <button v-on:click="toggleDisplayed" class="dark-teal hamburgerButton">TODO: HAMBURGER</button>
-        <div class="dark-teal mainBox" v-if="expanded">
+        <br/>
+        <div v-if="expanded">
             <a class="link" v-for="(link, name) in links" v-bind:key="name" v-bind:href="link">{{name}}<br/></a>
         </div>
     </div>
@@ -21,16 +22,18 @@ export default {
                 "Test": "https://www.youtube.com/"
             },
             expanded: this.expandedDefault,
+            boxSize: this.expandedDefault ? "100%" : "auto"
         };
     },
     methods: {
-        setDisplayed(isExpanded)
-        {
-            this.expanded = isExpanded;
-        },
         toggleDisplayed()
         {
             this.expanded = !this.expanded;
+            this.boxSize = this.getBoxHeightStyle();
+        },
+        getBoxHeightStyle()
+        {
+            return this.expanded ? "100%" : "auto";
         }
     }
 }
@@ -38,7 +41,7 @@ export default {
 
 <style scoped>
 .mainBox {
-    width: 150px;
+    width: 200px;
     height: 100%;
     align-content: left;
     padding-left: 10px;
@@ -57,13 +60,11 @@ export default {
 
 .hamburgerButton {
     float: left;
-    /* border-style: solid; */
     border-color: black;
     border-radius: 0px;
-    /* border-width: 1px;
-    color: black; */
 }
 
+/* Begone annoying white box around button when you click it */
 .hamburgerButton:focus {
     outline: none;
 }
