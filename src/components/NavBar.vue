@@ -1,9 +1,14 @@
 <template>
-    <div id="navBar" align="left" class="dark-teal mainBox" v-bind:style="{ height: boxSize }">
-        <button v-on:click="toggleDisplayed" class="dark-teal hamburgerButton">TODO: HAMBURGER</button>
+    <div id="navBar" align="left" class="dark-teal mainBox" v-bind:style="{ height: boxHeight, width: boxWidth }">
+        <div v-on:click="toggleDisplayed" class="button dark-teal hamburgerButton"><img class="fas fa-bars"/></div>
+        <br/>
         <br/>
         <div v-if="expanded">
-            <a class="link" v-for="(link, name) in links" v-bind:key="name" v-bind:href="link">{{name}}<br/></a>
+            <a v-for="(link, name) in links" v-bind:key="name" v-bind:href="link">
+                <div class="linkBox">
+                    <p class="link">{{name}}<br/></p>
+                </div>
+            </a>
         </div>
     </div>
 </template>
@@ -22,18 +27,24 @@ export default {
                 "Test": "https://www.youtube.com/"
             },
             expanded: this.expandedDefault,
-            boxSize: this.expandedDefault ? "100%" : "auto"
+            boxHeight: this.expandedDefault ? "100%" : "auto",
+            boxWidth: this.expandedDefault ? "200px" : "auto",
         };
     },
     methods: {
         toggleDisplayed()
         {
             this.expanded = !this.expanded;
-            this.boxSize = this.getBoxHeightStyle();
+            this.boxHeight = this.getBoxHeightStyle();
+            this.boxWidth = this.getBoxWidthStyle();
         },
         getBoxHeightStyle()
         {
             return this.expanded ? "100%" : "auto";
+        },
+        getBoxWidthStyle()
+        {
+            return this.expanded ? "200px" : "auto";
         }
     }
 }
@@ -44,7 +55,15 @@ export default {
     width: 200px;
     height: 100%;
     align-content: left;
-    padding-left: 10px;
+    
+}
+
+.linkBox {
+    width: 100%;
+}
+
+.linkBox:hover {
+    background-color: #005161;
 }
 
 .link {
@@ -52,20 +71,19 @@ export default {
     font-size: 18px;
     text-emphasis: bolder;
     text-align: left;
-}
-
-.link:visited {
-    color: rgb(160, 74, 240);
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 .hamburgerButton {
     float: left;
     border-color: black;
+    border-width: 1px;
     border-radius: 0px;
+    margin: 0px;
 }
 
-/* Begone annoying white box around button when you click it */
-.hamburgerButton:focus {
-    outline: none;
+.hamburgerButton:hover {
+    background-color: #005161;    
 }
 </style>
