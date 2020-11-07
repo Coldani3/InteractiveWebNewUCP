@@ -1,9 +1,8 @@
 <template>
-    <div id="navBar">
+    <div id="navBar" align="left">
         <button v-on:click="toggleDisplayed" class="dark-teal hamburgerButton">TODO: HAMBURGER</button>
         <div class="dark-teal mainBox" v-if="expanded">
-            <!-- TODO: Somehow get the links and display them -->
-            <a class="link" v-for="(name, link) in links" v-bind:key="link" v-bind:href="link">{{name}}</a>
+            <a class="link" v-for="(link, name) in links" v-bind:key="name" v-bind:href="link">{{name}}<br/></a>
         </div>
     </div>
 </template>
@@ -18,7 +17,8 @@ export default {
     data() {
         return {
             links: {
-                "Home": "https://www.google.com/"
+                "Home": "https://www.google.com/",
+                "Test": "https://www.youtube.com/"
             },
             expanded: this.expandedDefault,
         };
@@ -38,22 +38,33 @@ export default {
 
 <style scoped>
 .mainBox {
-    float: left;
-    width: 100px;
+    width: 150px;
     height: 100%;
+    align-content: left;
+    padding-left: 10px;
 }
 
 .link {
     color: lightseagreen;
     font-size: 18px;
     text-emphasis: bolder;
+    text-align: left;
 }
 
 .link:visited {
-    color: blueviolet;
+    color: rgb(160, 74, 240);
 }
 
 .hamburgerButton {
+    float: left;
+    /* border-style: solid; */
+    border-color: black;
+    border-radius: 0px;
+    /* border-width: 1px;
+    color: black; */
+}
 
+.hamburgerButton:focus {
+    outline: none;
 }
 </style>
