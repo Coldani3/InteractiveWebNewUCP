@@ -1,9 +1,10 @@
 <template>
     <div id="navBar" align="left" class="dark-teal mainBox" v-bind:style="{ height: boxHeight, width: boxWidth }">
         <div v-on:click="toggleDisplayed" class="button dark-teal hamburgerButton"><img class="fas fa-bars"/></div>
-        <br/>
-        <br/>
+
         <div v-if="expanded">
+            <br/>
+            <br/>
             <a v-for="(link, name) in links" v-bind:key="name" v-bind:href="link">
                 <div class="linkBox">
                     <p class="link">{{name}}<br/></p>
