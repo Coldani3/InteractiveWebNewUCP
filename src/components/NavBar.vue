@@ -2,9 +2,7 @@
     <div id="navBar" align="left" class="dark-teal mainBox" v-bind:style="{ height: boxHeight, width: boxWidth }">
         <div v-on:click="toggleDisplayed" class="button dark-teal hamburgerButton"><img class="fas fa-bars"/></div>
 
-        <div v-if="expanded">
-            <br/>
-            <br/>
+        <div class="linksBox" v-if="expanded">
             <a v-for="(link, name) in links" v-bind:key="name" v-bind:href="link">
                 <div class="linkBox">
                     <p class="link">{{name}}<br/></p>
@@ -25,6 +23,7 @@ export default {
         return {
             links: {
                 "Home": "https://www.google.com/",
+                "News": "",
                 "Course Search": "",
                 "COVID Information": "",
                 "Contact Us": "",
@@ -59,8 +58,6 @@ export default {
 .mainBox {
     width: 150px;
     height: 100%;
-    align-content: left;
-    
 }
 
 .linkBox {
@@ -82,13 +79,14 @@ export default {
 }
 
 .hamburgerButton {
-    float: left;
+    /* float: left; */
     /* Has weird white border otherwise */
     color: white;
     border-color: #005c6e;
     border-width: 1px;
     border-radius: 0px;
     margin: 0px;
+    margin-bottom: 5px;
 }
 
 .hamburgerButton:hover {
