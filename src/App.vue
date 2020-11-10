@@ -1,4 +1,5 @@
 <template>
+  <Banner/>
   <div class="columns fullHeight">
     <div class="column is-narrow">
       <NavBar expanded-default />
@@ -13,6 +14,7 @@
 
 <script>
 //import HelloWorld from "./components/HelloWorld.vue";
+import Banner from "./components/Banner.vue";
 import NewsBox from "./components/NewsBox.vue";
 import NavBar from "./components/NavBar.vue";
 
@@ -20,7 +22,8 @@ export default {
   name: "App",
   components: {
     NewsBox,
-    NavBar
+    NavBar,
+    Banner
   }
 };
 </script>
