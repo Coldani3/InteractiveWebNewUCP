@@ -11,8 +11,6 @@
 </template>
 
 <script>
-//require("..assets/ucplogo.png");
-
 export default {
     el: "#siteBanner",
     name: "Banner",
@@ -34,7 +32,7 @@ export default {
 }
 
 .loginSection {
-    float:right;
+    float: right;
     border-top-right-radius: 0;
     border-top-left-radius: 0;
     border-bottom-right-radius: 0;

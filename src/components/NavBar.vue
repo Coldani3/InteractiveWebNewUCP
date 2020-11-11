@@ -22,13 +22,13 @@ export default {
     data() {
         return {
             links: {
-                "Home": "https://www.google.com/",
-                "News": "",
-                "Course Search": "",
-                "COVID Information": "",
-                "Contact Us": "",
-                "Apply": "",
-                "Help and Support": "",
+                "Home": "index.html",
+                "News": "news.html",
+                "Course Search": "search.html",
+                "COVID Information": "covid.html",
+                "Contact Us": "contact.html",
+                "Apply": "apply.html",
+                "Help and Support": "help.html",
             },
             expanded: this.expandedDefault,
             boxHeight: this.expandedDefault ? "100%" : "auto",
