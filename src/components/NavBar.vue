@@ -78,15 +78,17 @@ export default {
     margin-bottom: 4px;
 }
 
+.linksBox {
+    margin-top: 5px;
+}
+
 .hamburgerButton {
-    /* float: left; */
     /* Has weird white border otherwise */
     color: white;
     border-color: #005c6e;
     border-width: 1px;
     border-radius: 0px;
     margin: 0px;
-    margin-bottom: 5px;
 }
 
 .hamburgerButton:hover {

@@ -64,7 +64,7 @@ export default {
     border-width:1px;
     border-radius:5px;
     text-align:left;
-    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .headerBox
