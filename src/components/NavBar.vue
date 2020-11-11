@@ -1,13 +1,15 @@
 <template>
     <div id="navBar" align="left" class="dark-teal mainBox" v-bind:style="{ height: boxHeight, width: boxWidth }">
-        <div v-on:click="toggleDisplayed" class="button dark-teal hamburgerButton"><img class="fas fa-bars"/></div>
+        <div class="innerMainBox">
+            <div v-on:click="toggleDisplayed" class="button dark-teal hamburgerButton"><img class="fas fa-bars"/></div>
 
-        <div class="linksBox" v-if="expanded">
-            <a v-for="(link, name) in links" v-bind:key="name" v-bind:href="link">
-                <div class="linkBox">
-                    <p class="link">{{name}}<br/></p>
-                </div>
-            </a>
+            <div class="linksBox" v-if="expanded">
+                <a v-for="(link, name) in links" v-bind:key="name" v-bind:href="link">
+                    <div class="linkBox">
+                        <p class="link">{{name}}<br/></p>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 </template>
@@ -63,6 +65,11 @@ export default {
     background-color: #005161;
 }
 
+.mainBox {
+    position: relative;
+    bottom: 0;
+}
+
 .link {
     color: white;
     font-size: 18px;
@@ -78,8 +85,8 @@ export default {
 }
 
 .hamburgerButton {
-    /* Has weird white border otherwise */
     color: white;
+    /* Has weird white border otherwise */
     border-color: #005c6e;
     border-width: 1px;
     border-radius: 0px;

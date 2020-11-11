@@ -1,7 +1,11 @@
-.geometric-bg-components {
-    background-image: url("../assets/geometric.png");
+.geometric-bg {
+    background-image: url("~@/assets/geometric.png");
 }
 
-.geometic-bg-src {
-    background-image: url("@/assets/geometric.png");
+.auto-overflow-y {
+    overflow-y: auto;
+}
+
+.auto-overflow-x {
+    overflow-x: auto;
 }

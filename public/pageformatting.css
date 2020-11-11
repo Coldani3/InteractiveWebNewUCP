@@ -1,3 +1,8 @@
+html {
+    min-height: 100%;
+    position: relative;
+}
+
 html, body {
     height: 100%;
     width: 100%;
@@ -11,6 +16,14 @@ html, body {
     height: 100%;
 }
 
+.fullMinHeight {
+    min-height: 100%;
+}
+
 .fullWidth {
     width: 100%;
+}
+
+.fullMinWidth {
+    min-width: 100%;
 }

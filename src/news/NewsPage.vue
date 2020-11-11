@@ -1,17 +1,19 @@
 <template>
-    <Banner/>
-    <div class="columns fullHeight">
-        <div class="column is-narrow">
-            <NavBar expanded-default />
-        </div>
-        <div class="column">
-            <NewsBox title="Test 2" full-article-link="https://google.com/" article="Sample text" image-src="logo.png" image-alt-text="Image 2"/>
-            <NewsBox title="Test 2" full-article-link="https://google.com/" article="Sample text" image-src="logo.png" image-alt-text="Image 2"/>
-            <NewsBox title="Test 2" full-article-link="https://google.com/" article="Sample text" image-src="logo.png" image-alt-text="Image 2"/>
-            <NewsBox title="Test 2" full-article-link="https://google.com/" article="Sample text" image-src="logo.png" image-alt-text="Image 2"/>
-            <NewsBox title="Test 2" full-article-link="https://google.com/" article="Sample text" image-src="logo.png" image-alt-text="Image 2"/>
-            <NewsBox title="Test 2" full-article-link="https://google.com/" article="Sample text" image-src="logo.png" image-alt-text="Image 2"/>
-            <NewsBox title="Test 2" full-article-link="https://google.com/" article="Sample text" image-src="logo.png" image-alt-text="Image 2"/>
+    <div class="fullMinHeight">
+        <Banner/>
+        <div class="columns fullHeight">
+            <div class="column is-narrow">
+                <NavBar expanded-default />
+            </div>
+            <div class="column geometric-bg">
+                <NewsBox title="Test 2" full-article-link="https://google.com/" article="Sample text" image-src="logo.png" image-alt-text="Image 2"/>
+                <NewsBox title="Test 2" full-article-link="https://google.com/" article="Sample text" image-src="logo.png" image-alt-text="Image 2"/>
+                <NewsBox title="Test 2" full-article-link="https://google.com/" article="Sample text" image-src="logo.png" image-alt-text="Image 2"/>
+                <NewsBox title="Test 2" full-article-link="https://google.com/" article="Sample text" image-src="logo.png" image-alt-text="Image 2"/>
+                <NewsBox title="Test 2" full-article-link="https://google.com/" article="Sample text" image-src="logo.png" image-alt-text="Image 2"/>
+                <NewsBox title="Test 2" full-article-link="https://google.com/" article="Sample text" image-src="logo.png" image-alt-text="Image 2"/>
+                <NewsBox title="Test 2" full-article-link="https://google.com/" article="Sample text" image-src="logo.png" image-alt-text="Image 2"/>
+            </div>
         </div>
     </div>
 </template>

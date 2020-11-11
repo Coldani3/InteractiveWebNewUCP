@@ -3,7 +3,7 @@
         <header class="teal headerBox">
             <p class="title">{{title}}</p>
         </header>
-        <article style="padding:4px;">
+        <article class="mainArticleBody" style="padding:4px;">
             <img class="articleImage" v-bind:src="image(imageSrc)" v-bind:alt="imageAltText">
             <p class="articleBody">{{article}}</p>
 
@@ -42,6 +42,12 @@ export default {
     margin-right:2px;
     max-height:150px;
     max-width:150px;
+}
+
+.mainArticleBody {
+    background-color: white;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 .articleBody
