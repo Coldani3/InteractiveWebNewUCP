@@ -4,7 +4,7 @@
             <p class="title">{{title}}</p>
         </header>
         <article style="padding:4px;">
-            <img class="articleImage" v-bind:src="imageSrc" v-bind:alt="imageAltText">
+            <img class="articleImage" v-bind:src="image(imageSrc)" v-bind:alt="imageAltText">
             <p class="articleBody">{{article}}</p>
 
             <div align="right">
@@ -15,6 +15,8 @@
 </template>
 
 <script>
+import { getImageURL } from "../util.js";
+
 export default {
     el: "#newsBox",
     name: "NewsBox",
@@ -24,6 +26,11 @@ export default {
         article: String,
         imageSrc: String,
         imageAltText: String
+    },
+    methods: {
+        image(url) {
+            return getImageURL(url);
+        }
     }
 }
 </script>

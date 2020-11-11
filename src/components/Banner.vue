@@ -3,11 +3,9 @@
         <img class="bannerImage" src="@/assets/ucp__logo.png" alt="logo">
 
         <div class="loginSection box">
-            <div>
-                <a href=""><img class="far fa-user-circle"> Student Login</a>
-                |
-                <a href=""><img class="far fa-user-circle"> Staff Login</a>
-            </div>
+            <a href=""><img class="far fa-user-circle"> Student Login</a>
+            |
+            <a href=""><img class="far fa-user-circle"> Staff Login</a>
         </div>
     </div>
 </template>
@@ -37,8 +35,8 @@ export default {
 
 .loginSection {
     float:right;
-    border-top-right-radius: 0px;
-    border-top-left-radius: 0px;
-    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 </style>

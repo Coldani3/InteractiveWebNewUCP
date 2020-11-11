@@ -32,7 +32,7 @@ export default {
             },
             expanded: this.expandedDefault,
             boxHeight: this.expandedDefault ? "100%" : "auto",
-            boxWidth: this.expandedDefault ? "200px" : "auto",
+            boxWidth: this.expandedDefault ? "15em" : "auto",
         };
     },
     methods: {
@@ -48,18 +48,13 @@ export default {
         },
         getBoxWidthStyle()
         {
-            return this.expanded ? "200px" : "auto";
+            return this.expanded ? "15em" : "auto";
         }
     }
 }
 </script>
 
 <style scoped>
-.mainBox {
-    width: 150px;
-    height: 100%;
-}
-
 .linkBox {
     width: 100%;
 }
