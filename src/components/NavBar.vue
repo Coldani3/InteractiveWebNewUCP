@@ -18,9 +18,6 @@
 export default {
     el: "#navBar",
     name: "NavBar",
-    props: {
-         expandedDefault: Boolean
-    },
     data() {
         return {
             links: {
@@ -32,10 +29,17 @@ export default {
                 "Apply": "apply.html",
                 "Help and Support": "help.html",
             },
-            expanded: this.expandedDefault,
+            expanded: false,
             boxHeight: this.expandedDefault ? "100%" : "auto",
             boxWidth: this.expandedDefault ? "15em" : "auto",
         };
+    },
+    created()
+    {
+        if (this.getExpandedDefault())
+        {
+            this.toggleDisplayed();
+        }
     },
     methods: {
         toggleDisplayed()
@@ -51,6 +55,10 @@ export default {
         getBoxWidthStyle()
         {
             return this.expanded ? "15em" : "auto";
+        },
+        getExpandedDefault()
+        {
+            return window.innerWidth > window.innerHeight;
         }
     }
 }
