@@ -30,8 +30,8 @@ export default {
                 "Help and Support": "help.html",
             },
             expanded: false,
-            boxHeight: this.expandedDefault ? "100%" : "auto",
-            boxWidth: this.expandedDefault ? "15em" : "auto",
+            boxHeight: this.expanded ? "100%" : "auto",
+            boxWidth: this.expanded ? "12em" : "auto",
         };
     },
     created()
@@ -54,7 +54,7 @@ export default {
         },
         getBoxWidthStyle()
         {
-            return this.expanded ? "15em" : "auto";
+            return this.expanded ? "12em" : "auto";
         },
         getExpandedDefault()
         {

@@ -1,4 +1,4 @@
 import { createApp } from "vue";
 import CovidPage from "./CovidPage.vue"
 
-createApp(CovidPage).mount("#app");
+createApp(CovidPage).mount("#covidApp");

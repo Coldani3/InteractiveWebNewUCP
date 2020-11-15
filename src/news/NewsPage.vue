@@ -5,7 +5,7 @@
             <div class="column is-narrow">
                 <NavBar/>
             </div>
-            <div class="column geometric-bg">
+            <div class="column">
                 <NewsBox title="Test 2" full-article-link="https://google.com/" article="Sample text" image-src="logo.png" image-alt-text="Image 2"/>
                 <NewsBox title="Test 2" full-article-link="https://google.com/" article="Sample text" image-src="logo.png" image-alt-text="Image 2"/>
                 <NewsBox title="Test 2" full-article-link="https://google.com/" article="Sample text" image-src="logo.png" image-alt-text="Image 2"/>
