@@ -1,10 +1,8 @@
 <template>
-    <div>
-        <Banner/>
-        <div>
-            
-        </div>
-    </div>
+  <div>
+    <Banner />
+    <div></div>
+  </div>
 </template>
 
 <script>
