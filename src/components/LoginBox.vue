@@ -19,7 +19,7 @@
 <script>
 export default {
   el: "#loginBox",
-  name: "Banner",
+  name: "LoginBox",
   methods: {
     login() {
       window.location.href = "index.html";
