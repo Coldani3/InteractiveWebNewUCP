@@ -9,15 +9,24 @@
       <input type="text" class="searchBar" />
     </div>
     <div class="boxed resultsBox" v-if="searching">
-      <p>Test</p>
+      <CourseBox
+        course-description="Lorem ipsum"
+        course-image=""
+        course-link="index.html"
+      />
     </div>
   </div>
 </template>
 
 <script>
+import CourseBox from "../components/CourseBox.vue";
+
 export default {
   el: "#courseSearch",
   name: "CourseSearch",
+  components: {
+    CourseBox
+  },
   data() {
     return {
       searching: false
