@@ -41,7 +41,8 @@ export default {
 
 <style scoped>
 .whole {
-  margin-right: 40px;
+  margin-right: 3em;
+  margin-bottom: 2em;
 }
 
 .titleBox {
@@ -50,7 +51,7 @@ export default {
 }
 
 .titleBox:hover {
-  background-color:#005161;
+  background-color: #005161;
 }
 
 .titleOnExpanded {

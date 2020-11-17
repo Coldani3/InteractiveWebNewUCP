@@ -1,12 +1,14 @@
 <template>
-  <div class="fullMinHeight">
+  <div class="fullHeight">
     <Banner />
-    <div class="columns fullMinHeight">
+    <div class="columns fullHeight">
       <div class="column is-narrow">
         <NavBar />
       </div>
       <div class="column">
         <ExpandingHelp title="Example" contents="Sample Text" />
+        <ExpandingHelp title="Example 2" contents="Sample Text" />
+        <ExpandingHelp title="Example 3" contents="Sample Text" />
       </div>
     </div>
   </div>
