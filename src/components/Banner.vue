@@ -5,7 +5,7 @@
     <div class="loginSection box">
       <a href="login.html"><img class="far fa-user-circle" /> Student Login</a>
       |
-      <a href=""><img class="far fa-user-circle" /> Staff Login</a>
+      <a href="login.html"><img class="far fa-user-circle" /> Staff Login</a>
     </div>
   </div>
 </template>
