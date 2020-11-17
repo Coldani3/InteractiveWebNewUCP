@@ -1,7 +1,11 @@
 <template>
   <div id="courseSearch" class="fullHeight">
-    <div class="boxed">
-      <i class="fas fa-search fa-2x borderRight"></i>
+    <div class="parentDiv">
+      <div
+        class="fas fa-search boxed searchIcon"
+        v-on:click="displaySearchResults()"
+      ></div>
+      <input type="text" class="searchBar" />
     </div>
     <div class="boxed resultsBox" v-if="searching"></div>
   </div>
@@ -15,12 +19,34 @@ export default {
     return {
       searching: false
     };
+  },
+  methods: {
+    displaySearchResults() {
+      this.searching = true;
+    }
   }
 };
 </script>
 
 <style scoped>
-i {
+.parentDiv {
+  font-size: 0;
+  display: flex;
+}
+
+.searchIcon:before {
+  padding: 0;
+  margin: 0;
+}
+
+.searchIcon {
+  padding: 0;
+  margin: 0;
+  font-size: 25px;
+}
+
+.searchIcon:hover {
+  cursor: pointer;
 }
 
 .boxed {
@@ -34,6 +60,11 @@ i {
 }
 
 .searchBar {
+  border-radius: 0;
+  border-width: 1px;
+  height: 100%;
+  border-left: 0px;
+  padding-bottom: 1px;
 }
 
 .resultsBox {
