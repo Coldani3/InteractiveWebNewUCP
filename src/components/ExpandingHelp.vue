@@ -44,6 +44,11 @@ export default {
   margin-right: 40px;
 }
 
+.titleBox {
+  padding-top: 2px;
+  height: 2em;
+}
+
 .titleBox:hover {
   background-color:#005161;
 }
