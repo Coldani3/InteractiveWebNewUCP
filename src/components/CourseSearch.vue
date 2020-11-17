@@ -1,5 +1,6 @@
 <template>
   <div id="courseSearch" class="fullHeight">
+    <h1>Search for Course</h1>
     <div class="parentDiv">
       <div
         class="fas fa-search boxed searchIcon"
@@ -7,7 +8,9 @@
       ></div>
       <input type="text" class="searchBar" />
     </div>
-    <div class="boxed resultsBox" v-if="searching"></div>
+    <div class="boxed resultsBox" v-if="searching">
+      <p>Test</p>
+    </div>
   </div>
 </template>
 
@@ -32,6 +35,7 @@ export default {
 .parentDiv {
   font-size: 0;
   display: flex;
+  margin-right: 40px;
 }
 
 .searchIcon:before {
@@ -62,9 +66,10 @@ export default {
 .searchBar {
   border-radius: 0;
   border-width: 1px;
-  height: 100%;
+  height: 25px;
   border-left: 0px;
   padding-bottom: 1px;
+  width: 100%;
 }
 
 .resultsBox {

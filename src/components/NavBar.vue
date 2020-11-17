@@ -31,12 +31,15 @@ export default {
   data() {
     return {
       links: {
-        Home: "index.html",
-        News: "news.html",
+        // eslint-disable-next-line prettier/prettier
+        "Home": "index.html",
+        // eslint-disable-next-line prettier/prettier
+        "News": "news.html",
         "Course Search": "search.html",
         "COVID Information": "covid.html",
         "Contact Us": "contact.html",
-        Apply: "apply.html",
+        // eslint-disable-next-line prettier/prettier
+        "Apply": "apply.html",
         "Help and Support": "help.html"
       },
       expanded: false,
