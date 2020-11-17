@@ -3,7 +3,7 @@
         <img class="bannerImage" src="@/assets/ucp__logo.png" alt="logo">
 
         <div class="loginSection box">
-            <a href=""><img class="far fa-user-circle"> Student Login</a>
+            <a href="login.html"><img class="far fa-user-circle"> Student Login</a>
             |
             <a href=""><img class="far fa-user-circle"> Staff Login</a>
         </div>

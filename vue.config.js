@@ -38,5 +38,10 @@ module.exports = {
             template: "public/search.html",
             filename: "search.html"
         },
+        "login": {
+            entry: "./src/login/main.js",
+            template: "public/login.html",
+            filename: "login.html"
+        },
     }
 }
