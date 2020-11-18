@@ -1,7 +1,7 @@
 <template>
-  <div class="fullHeight">
+  <div class="fullHeight fullMinHeight">
     <Banner />
-    <div class="columns fullHeight">
+    <div class="columns fullHeight fullMinHeight">
       <div class="column is-narrow">
         <NavBar />
       </div>
@@ -12,7 +12,10 @@
           description="Lorem ipsum dolor"
           courseTitle="Sample text"
         />
-        <button v-on:click="addNewUcas()" class="button is-rounded teal-text addUcasButton">+</button>
+        <button
+          v-on:click="addNewUcas()"
+          class="button is-rounded teal-text addUcasButton"
+        >+</button>
       </div>
     </div>
   </div>
@@ -38,6 +41,10 @@ export default {
   methods: {
     addNewUcas() {
       this.ucasCount++;
+      setTimeout(this.updateNavbar(), 20);
+    },
+    updateNavbar() {
+      this.$emit("update-navbar");
     }
   }
 };

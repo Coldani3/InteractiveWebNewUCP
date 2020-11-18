@@ -2,8 +2,9 @@
   <div
     id="navBar"
     align="left"
-    class="dark-teal mainBox"
+    class="dark-teal mainBox fullHeight"
     v-bind:style="{ height: boxHeight, width: boxWidth }"
+    v-on:update-navbar="updateHeight()"
   >
     <div class="innerMainBox">
       <div
@@ -43,7 +44,7 @@ export default {
         "Help and Support": "help.html"
       },
       expanded: false,
-      boxHeight: this.expanded ? "100%" : "auto",
+      boxHeight: this.expanded ? document.getElementsByTagName("html").item(0).clientHeight + "px" : "auto",
       boxWidth: this.expanded ? "12em" : "auto"
     };
   },
@@ -57,15 +58,20 @@ export default {
       this.expanded = !this.expanded;
       this.boxHeight = this.getBoxHeightStyle();
       this.boxWidth = this.getBoxWidthStyle();
+      this.$emit("toggled");
     },
     getBoxHeightStyle() {
-      return this.expanded ? "100%" : "auto";
+      return this.expanded ? document.getElementsByTagName("html").item(0).clientHeight + "px" : "auto";
     },
     getBoxWidthStyle() {
       return this.expanded ? "12em" : "auto";
     },
     getExpandedDefault() {
       return window.innerWidth > window.innerHeight;
+    },
+    updateHeight() {
+      console.log("update height");
+      this.boxHeight = this.getBoxHeightStyle();
     }
   }
 };
@@ -83,6 +89,7 @@ export default {
 .mainBox {
   position: relative;
   bottom: 0;
+  /* height: auto; */
 }
 
 .link {
