@@ -23,3 +23,27 @@
 .white {
     background-color: white;
 }
+
+.teal-text {
+    color: #31b7bc;
+}
+
+.dark-teal-text {
+    color: #005c6e;
+}
+
+.darker-teal-text {
+    color: #005161;
+}
+
+.light-teal-text {
+    color: #b2dddf;
+}
+
+.peach-text {
+    color: #f08575;
+}
+
+.white-text {
+    color: white;
+}

@@ -7,9 +7,12 @@
       </div>
       <div class="column">
         <UcasInputBox
+          v-for="n in parseInt(ucasCount)"
+          v-bind:key="n"
           description="Lorem ipsum dolor"
           courseTitle="Sample text"
         />
+        <button v-on:click="addNewUcas()" class="button is-rounded teal-text addUcasButton">+</button>
       </div>
     </div>
   </div>
@@ -26,6 +29,22 @@ export default {
     Banner,
     NavBar,
     UcasInputBox
+  },
+  data() {
+    return {
+      ucasCount: 1
+    };
+  },
+  methods: {
+    addNewUcas() {
+      this.ucasCount++;
+    }
   }
 };
 </script>
+
+<style scoped>
+.addUcasButton {
+  
+}
+</style>
