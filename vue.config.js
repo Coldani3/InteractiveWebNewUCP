@@ -42,6 +42,11 @@ module.exports = {
       entry: "./src/login/main.js",
       template: "public/login.html",
       filename: "login.html"
+    },
+    ucas: {
+      entry: "./src/ucas/main.js",
+      template: "public/ucas.html",
+      filename: "ucas.html"
     }
   }
 };

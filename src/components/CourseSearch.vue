@@ -1,6 +1,6 @@
 <template>
   <div id="courseSearch" class="fullHeight">
-    <h1>Search for Course</h1>
+    <!-- <h1>Search for Course</h1> -->
     <div class="parentDiv">
       <div
         class="fas fa-search boxed searchIcon"
