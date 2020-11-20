@@ -41,17 +41,7 @@ export default {
   methods: {
     addNewUcas() {
       this.ucasCount++;
-      setTimeout(this.updateNavbar(), 20);
-    },
-    updateNavbar() {
-      this.$emit("update-navbar");
     }
   }
 };
 </script>
-
-<style scoped>
-.addUcasButton {
-  
-}
-</style>

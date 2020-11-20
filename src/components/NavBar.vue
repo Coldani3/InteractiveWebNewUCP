@@ -58,7 +58,6 @@ export default {
       this.expanded = !this.expanded;
       this.boxHeight = this.getBoxHeightStyle();
       this.boxWidth = this.getBoxWidthStyle();
-      this.$emit("toggled");
     },
     getBoxHeightStyle() {
       return this.expanded ? document.getElementsByTagName("html").item(0).clientHeight + "px" : "auto";

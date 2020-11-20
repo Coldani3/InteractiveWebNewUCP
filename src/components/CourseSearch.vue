@@ -1,15 +1,13 @@
 <template>
   <div id="courseSearch" class="fullHeight">
     <!-- <h1>Search for Course</h1> -->
-    <div class="parentDiv">
-      <div
-        class="fas fa-search boxed searchIcon"
-        v-on:click="displaySearchResults()"
-      ></div>
+    <div class="parentDiv" v-on:click="displaySearchResults()">
+      <div class="fas fa-search boxed searchIcon"></div>
       <input type="text" class="searchBar" />
     </div>
     <div class="boxed resultsBox" v-if="searching">
       <CourseBox
+        course-title="Sample Text"
         course-description="Lorem ipsum"
         course-image=""
         course-link="index.html"
@@ -83,5 +81,8 @@ export default {
 
 .resultsBox {
   overflow-y: auto;
+  overflow-x: none;
+  margin-right: 40px;
+  background-color: gainsboro;
 }
 </style>
