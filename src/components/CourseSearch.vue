@@ -1,11 +1,28 @@
 <template>
   <div id="courseSearch" class="fullHeight">
-    <!-- <h1>Search for Course</h1> -->
     <div class="parentDiv" v-on:click="displaySearchResults()">
       <div class="fas fa-search boxed searchIcon"></div>
       <input type="text" class="searchBar" />
     </div>
     <div class="boxed resultsBox" v-if="searching">
+      <CourseBox
+        course-title="Sample Text"
+        course-description="Lorem ipsum"
+        course-image=""
+        course-link="index.html"
+      />
+      <CourseBox
+        course-title="Sample Text"
+        course-description="Lorem ipsum"
+        course-image=""
+        course-link="index.html"
+      />
+      <CourseBox
+        course-title="Sample Text"
+        course-description="Lorem ipsum"
+        course-image=""
+        course-link="index.html"
+      />
       <CourseBox
         course-title="Sample Text"
         course-description="Lorem ipsum"
@@ -51,9 +68,8 @@ export default {
 }
 
 .searchIcon {
-  padding: 0;
   margin: 0;
-  font-size: 25px;
+  font-size: 35px;
 }
 
 .searchIcon:hover {
@@ -73,7 +89,7 @@ export default {
 .searchBar {
   border-radius: 0;
   border-width: 1px;
-  height: 25px;
+  height: 35px;
   border-left: 0px;
   padding-bottom: 1px;
   width: 100%;
@@ -81,8 +97,11 @@ export default {
 
 .resultsBox {
   overflow-y: auto;
-  overflow-x: none;
+  overflow-x: hidden;
   margin-right: 40px;
   background-color: gainsboro;
+  height: 30em;
+  padding-right: 17px;
+  border-top: 0;
 }
 </style>

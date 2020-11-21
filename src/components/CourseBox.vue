@@ -1,13 +1,13 @@
 <template>
   <a v-bind:href="courseLink" class="link">
     <div class="box columns mainDiv" id="courseBox">
-        <div class="column is-narrow imgDiv">
-          <img src="" alt="Image" />
-        </div>
-        <div class="column">
-          <p class="title">{{ courseTitle }}</p>
-          <p>{{ courseDescription }}</p>
-        </div>
+      <div class="column is-narrow imgDiv">
+        <img src="" alt="Image" />
+      </div>
+      <div class="column">
+        <p class="title">{{ courseTitle }}</p>
+        <p>{{ courseDescription }}</p>
+      </div>
     </div>
   </a>
 </template>
@@ -28,7 +28,7 @@ export default {
 <style scoped>
 .mainDiv {
   width: 100%;
-  margin: 5px;
+  margin: 10px;
 }
 
 .link {
@@ -37,7 +37,6 @@ export default {
 }
 
 .imgDiv {
-  float: left;
   height: 100%;
 }
 </style>
