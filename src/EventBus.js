@@ -2,8 +2,10 @@ class EventBus {
   events = {};
 
   emit(eventName) {
-    for (let func in this.events[eventName]) {
-      func();
+    if (this.events[eventName].length > 0) {
+      for (let i = 0; i < this.events[eventName].length; i++) {
+        this.events[eventName][i]();
+      }
     }
   }
   on(eventName, onEventFunc) {

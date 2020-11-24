@@ -37,8 +37,8 @@ export default {
       return getImageURL(url);
     }
   },
-  created() {
-    eventBus.$emit(NavBarUpdate);
+  mounted() {
+    eventBus.emit(NavBarUpdate);
   }
 };
 </script>

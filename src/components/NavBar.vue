@@ -51,7 +51,7 @@ export default {
     };
   },
   created() {
-    eventBus.$on(NavBarUpdate, this.updateHeight());
+    eventBus.on(NavBarUpdate, this.updateHeight);
     if (this.getExpandedDefault()) {
       this.toggleDisplayed();
     }
@@ -63,7 +63,7 @@ export default {
       this.boxWidth = this.getBoxWidthStyle();
     },
     getBoxHeightStyle() {
-      return this.expanded ? document.getElementsByTagName("html").item(0).clientHeight + "px" : "auto";
+      return this.expanded ? document.body.scrollHeight + "px" : "auto";
     },
     getBoxWidthStyle() {
       return this.expanded ? "12em" : "auto";
