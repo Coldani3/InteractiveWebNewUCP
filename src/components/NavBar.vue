@@ -26,6 +26,8 @@
 </template>
 
 <script>
+import { eventBus, NavBarUpdate } from "../EventBus.js";
+
 export default {
   el: "#navBar",
   name: "NavBar",
@@ -49,6 +51,7 @@ export default {
     };
   },
   created() {
+    eventBus.$on(NavBarUpdate, this.updateHeight());
     if (this.getExpandedDefault()) {
       this.toggleDisplayed();
     }

@@ -1,8 +1,7 @@
-function getImageURL(imageName)
-{
-    var assets = require.context("./assets/");
+function getImageURL(imageName) {
+  var assets = require.context("./assets/");
 
-    return assets("./" + imageName);
+  return assets("./" + imageName);
 }
 
-export {getImageURL};
+export { getImageURL };
