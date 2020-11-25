@@ -64,6 +64,7 @@
 import Banner from "../components/Banner.vue";
 import NavBar from "../components/NavBar.vue";
 import NewsBox from "../components/NewsBox.vue";
+import { eventBus, NavBarUpdate } from "../EventBus.js";
 
 export default {
   name: "NewsPage",
@@ -71,6 +72,9 @@ export default {
     Banner,
     NavBar,
     NewsBox
+  },
+  mounted() {
+    eventBus.emit(NavBarUpdate);
   }
 };
 </script>

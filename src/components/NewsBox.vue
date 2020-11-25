@@ -20,7 +20,6 @@
 
 <script>
 import { getImageURL } from "../util.js";
-import { eventBus, NavBarUpdate } from "../EventBus.js";
 
 export default {
   el: "#newsBox",
@@ -36,9 +35,6 @@ export default {
     image(url) {
       return getImageURL(url);
     }
-  },
-  mounted() {
-    eventBus.emit(NavBarUpdate);
   }
 };
 </script>
@@ -88,5 +84,6 @@ export default {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   padding: 4px;
+  background-image: url("~@/assets/geometric-transparent.png");
 }
 </style>

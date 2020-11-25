@@ -86,12 +86,16 @@
 <script>
 import Banner from "../components/Banner.vue";
 import NavBar from "../components/NavBar.vue";
+import { eventBus, NavBarUpdate } from "../EventBus.js";
 
 export default {
   name: "CovidPage",
   components: {
     NavBar,
     Banner
+  },
+  mounted() {
+    eventBus.emit(NavBarUpdate);
   }
 };
 </script>

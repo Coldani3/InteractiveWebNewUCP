@@ -61,6 +61,7 @@ export default {
       this.expanded = !this.expanded;
       this.boxHeight = this.getBoxHeightStyle();
       this.boxWidth = this.getBoxWidthStyle();
+      this.updateHeight;
     },
     getBoxHeightStyle() {
       return this.expanded ? document.body.scrollHeight + "px" : "auto";

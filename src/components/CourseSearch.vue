@@ -35,6 +35,7 @@
 
 <script>
 import CourseBox from "../components/CourseBox.vue";
+import { eventBus, NavBarUpdate } from "../EventBus.js";
 
 export default {
   el: "#courseSearch",
@@ -50,6 +51,8 @@ export default {
   methods: {
     displaySearchResults() {
       this.searching = true;
+      // setTimeout(eventBus.emit(NavBarUpdate), 50);
+      eventBus.emit(NavBarUpdate);
     }
   }
 };
