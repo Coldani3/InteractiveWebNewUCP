@@ -25,6 +25,7 @@
 import Banner from "../components/Banner.vue";
 import NavBar from "../components/NavBar.vue";
 import UcasInputBox from "../components/UcasInputBox.vue";
+import { eventBus, NavBarUpdate } from "../EventBus.js";
 
 export default {
   name: "UcasPage",
@@ -41,6 +42,7 @@ export default {
   methods: {
     addNewUcas() {
       this.ucasCount++;
+      eventBus.emit(NavBarUpdate);
     }
   }
 };

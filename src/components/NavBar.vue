@@ -13,6 +13,7 @@
       >
         <img class="fas fa-bars" />
       </div>
+      <hr class="darker-teal" />
 
       <div class="linksBox" v-if="expanded">
         <a v-for="(link, name) in links" v-bind:key="name" v-bind:href="link">
@@ -120,5 +121,10 @@ export default {
 
 .hamburgerButton:hover {
   background-color: #005161;
+}
+
+hr {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 </style>
