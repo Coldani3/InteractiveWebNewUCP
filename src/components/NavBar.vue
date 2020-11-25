@@ -47,8 +47,8 @@ export default {
         "Help and Support": "help.html"
       },
       expanded: false,
-      boxHeight: this.expanded ? document.body.scrollHeight + "px" : "auto",
-      boxWidth: this.expanded ? "12em" : "auto"
+      boxHeight: this.getBoxHeightStyle(),
+      boxWidth: this.getBoxWidthStyle()
     };
   },
   created() {
@@ -74,7 +74,6 @@ export default {
       return window.innerWidth > window.innerHeight;
     },
     updateHeight() {
-      console.log("update height");
       this.boxHeight = this.getBoxHeightStyle();
     }
   }

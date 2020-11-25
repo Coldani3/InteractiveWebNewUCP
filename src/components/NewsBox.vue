@@ -42,7 +42,7 @@ export default {
 <style scoped>
 .articleImage {
   float: left;
-  margin-right: 2px;
+  margin-right: 15px;
   max-height: 150px;
   max-width: 150px;
 }

@@ -13,3 +13,14 @@
 .whiteText {
     color: white;
 }
+
+/* * {
+    font-family: "Montserrat-Regular";
+} */
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("~@/assets/fonts/Montserrat-Regular.ttf") format("font-truetype");
+  font-weight: normal;
+  font-style: normal;
+}

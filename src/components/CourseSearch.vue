@@ -2,7 +2,7 @@
   <div id="courseSearch" class="fullHeight">
     <div class="parentDiv" v-on:click="displaySearchResults()">
       <div class="fas fa-search boxed searchIcon"></div>
-      <input type="text" class="searchBar" />
+      <input type="text" id="searchBar" class="searchBar" />
     </div>
     <div class="boxed resultsBox" v-if="searching">
       <CourseBox
@@ -50,9 +50,10 @@ export default {
   },
   methods: {
     displaySearchResults() {
-      this.searching = true;
-      // setTimeout(eventBus.emit(NavBarUpdate), 50);
-      eventBus.emit(NavBarUpdate);
+      if (document.getElementById("searchBar").value.length > 0) {
+        this.searching = true;
+        eventBus.emit(NavBarUpdate);
+      }
     }
   }
 };
