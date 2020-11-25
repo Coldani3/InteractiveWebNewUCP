@@ -18,6 +18,11 @@
       <div class="column is-half select">
         <select class="gradeSelect">
           <option value="grade1">A*</option>
+          <option value="grade1">A</option>
+          <option value="grade1">B</option>
+          <option value="grade1">C</option>
+          <option value="grade1">D</option>
+          <option value="grade1">E</option>
         </select>
       </div>
     </div>

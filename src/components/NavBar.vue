@@ -47,7 +47,7 @@ export default {
         "Help and Support": "help.html"
       },
       expanded: false,
-      boxHeight: this.expanded ? document.getElementsByTagName("html").item(0).clientHeight + "px" : "auto",
+      boxHeight: this.expanded ? document.body.scrollHeight + "px" : "auto",
       boxWidth: this.expanded ? "12em" : "auto"
     };
   },

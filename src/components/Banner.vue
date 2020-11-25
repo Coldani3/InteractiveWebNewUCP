@@ -1,6 +1,11 @@
 <template>
   <div id="siteBanner" class="bannerDiv">
-    <img class="bannerImage" src="@/assets/ucp__logo.png" alt="logo" />
+    <img
+      class="bannerImage"
+      height="150"
+      src="@/assets/ucp_logo.png"
+      alt="logo"
+    />
 
     <div class="loginSection box">
       <a href="login.html"><img class="far fa-user-circle" /> Student Login</a>
@@ -13,8 +18,7 @@
 <script>
 export default {
   el: "#siteBanner",
-  name: "Banner",
-  methods: {}
+  name: "Banner"
 };
 </script>
 
