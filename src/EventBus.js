@@ -18,3 +18,4 @@ class EventBus {
 
 export const eventBus = new EventBus();
 export const NavBarUpdate = "updateNavbar";
+export const ExpandingHelpPressed = "expandedHelpPressed";

@@ -20,7 +20,7 @@
       <!-- <div align="right"> -->
       <!-- <div align="left"> -->
       <div>
-        <a class="button" v-bind:href="fullArticleLink">Full article</a>
+        <a class="button peach" v-bind:href="fullArticleLink">Full article</a>
       </div>
       <!-- </div> -->
     </article>

@@ -15,6 +15,8 @@
 </template>
 
 <script>
+import { eventBus, ExpandingHelpPressed } from "../EventBus.js";
+
 export default {
   el: "#expandingHelp",
   name: "LoginBox",
@@ -28,9 +30,17 @@ export default {
       hover: false
     };
   },
+  created() {
+    eventBus.on(ExpandingHelpPressed, this.unexpand);
+  },
   methods: {
     toggleExpanded() {
+      eventBus.emit(ExpandingHelpPressed);
       this.expanded = !this.expanded;
+      //setTimeout(function() {  }, 50);
+    },
+    unexpand() {
+      this.expanded = false;
     },
     hoverToggle() {
       this.hover = !this.hover;
