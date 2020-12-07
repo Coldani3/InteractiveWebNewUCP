@@ -4,16 +4,25 @@
       <p class="title">{{ title }}</p>
     </header>
     <article class="mainArticleBody" style="padding:4px;">
-      <img
-        class="articleImage"
-        v-bind:src="image(imageSrc)"
-        v-bind:alt="imageAltText"
-      />
-      <p class="articleBody">{{ article }}</p>
+      <div class="columns">
+        <div class="column is-2">
+          <img
+            class="articleImage"
+            v-bind:src="image(imageSrc)"
+            v-bind:alt="imageAltText"
+          />
+        </div>
+        <div class="column">
+          <p class="articleBody">{{ article }}</p>
+        </div>
+      </div>
 
-      <div align="right">
+      <!-- <div align="right"> -->
+      <!-- <div align="left"> -->
+      <div>
         <a class="button" v-bind:href="fullArticleLink">Full article</a>
       </div>
+      <!-- </div> -->
     </article>
   </div>
 </template>
@@ -84,6 +93,11 @@ export default {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   padding: 4px;
-  background-image: url("~@/assets/geometric-transparent.png");
+  /* background-image: url("~@/assets/geometric-transparent.png"); */
+}
+
+hr {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 </style>
