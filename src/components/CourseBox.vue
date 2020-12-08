@@ -26,7 +26,7 @@ export default {
   },
   data() {
     return {
-      visible: true
+      visible: false
     };
   },
   created() {
@@ -38,9 +38,8 @@ export default {
       if (
         !this.courseTitle
           .toLowerCase()
-          .includes(
-            data.searchInput.toLowerCase() && data.searchInput.length > 0
-          )
+          .includes(data.searchInput.toLowerCase()) &&
+        data.searchInput.length > 0
       ) {
         this.visible = false;
       } else {

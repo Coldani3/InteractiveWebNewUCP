@@ -9,6 +9,7 @@ class EventBus {
     }
   }
   on(eventName, onEventFunc) {
+    console.log("on " + eventName);
     if (!(eventName in this.events)) {
       this.events[eventName] = [];
     }

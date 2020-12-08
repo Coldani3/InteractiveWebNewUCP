@@ -1,24 +1,26 @@
 <template>
   <div id="courseSearch" class="fullHeight">
-    <div class="parentDiv" v-on:click="displaySearchResults()">
-      <div class="fas fa-search boxed searchIcon"></div>
+    <div class="parentDiv">
+      <div v-on:click="displaySearchResults()">
+        <div class="fas fa-search boxed searchIcon"></div>
+      </div>
       <input type="text" id="searchBar" class="searchBar" />
     </div>
-    <div class="boxed resultsBox" v-if="searching">
+    <div class="boxed resultsBox" v-bind:style="{ height: searchResultsHeight }">
       <CourseBox
-        course-title="Sample Text"
+        course-title="Jim John's Jamboree"
         course-description="Lorem ipsum"
         course-image=""
         course-link="index.html"
       />
       <CourseBox
-        course-title="Sample Text"
+        course-title="Lux"
         course-description="Lorem ipsum"
         course-image=""
         course-link="index.html"
       />
       <CourseBox
-        course-title="Sample Text"
+        course-title="Juj"
         course-description="Lorem ipsum"
         course-image=""
         course-link="index.html"
@@ -45,18 +47,23 @@ export default {
   },
   data() {
     return {
-      searching: false
+      searching: true,
+      searchResultsHeight: "10em",
+      courses: {
+        
+      }
     };
   },
   methods: {
     displaySearchResults() {
-      if (document.getElementById("searchBar").value.length > 0) {
-        this.searching = true;
-        eventBus.emit(SearchUpdated, {
-          searchInput: document.getElementById("searchBar").value
-        });
-        eventBus.emit(NavBarUpdate);
-      }
+      // if (document.getElementById("searchBar").value.length > 0) {
+      this.searchResultsHeight = "30em";
+      this.searching = true;
+      eventBus.emit(SearchUpdated, {
+        searchInput: document.getElementById("searchBar").value
+      });
+      eventBus.emit(NavBarUpdate);
+      //}
     }
   }
 };
