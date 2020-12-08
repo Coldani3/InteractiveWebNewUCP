@@ -16,6 +16,10 @@ class UcasCalculator {
     console.log(this.totalPoints);
   }
 
+  getPoints() {
+    return this.totalPoints;
+  }
+
   reset() {
     this.prevVals = {};
     this.lastUcasID = 0;

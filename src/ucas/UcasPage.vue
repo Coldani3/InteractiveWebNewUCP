@@ -16,8 +16,11 @@
           v-on:click="addNewUcas()"
           class="button is-rounded teal-text addUcasButton"
         >+</button>
+        <br />
+        <br />
         <button v-on:click="calculateUCAS()" class="button is-rounded">Calculate</button>
-        <div>
+        <div v-if="calculate">
+          <p class="subtitle">Your UCAS Points: {{ ucasPoints() }}</p>
           <!-- Generated results -->
         </div>
       </div>
@@ -55,6 +58,9 @@ export default {
     },
     calculateUCAS() {
       this.calculate = true;
+    },
+    ucasPoints() {
+      return ucasCalculator.getPoints();
     }
   }
 };

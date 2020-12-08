@@ -191,14 +191,12 @@ export default {
   },
   methods: {
     displaySearchResults() {
-      // if (document.getElementById("searchBar").value.length > 0) {
       this.searchResultsHeight = "30em";
       this.searching = true;
       eventBus.emit(SearchUpdated, {
         searchInput: document.getElementById("searchBar").value
       });
       eventBus.emit(NavBarUpdate);
-      //}
     }
   }
 };

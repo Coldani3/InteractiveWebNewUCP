@@ -17,12 +17,9 @@
         </div>
       </div>
 
-      <!-- <div align="right"> -->
-      <!-- <div align="left"> -->
       <div>
         <a class="button peach" v-bind:href="fullArticleLink">Full article</a>
       </div>
-      <!-- </div> -->
     </article>
   </div>
 </template>
