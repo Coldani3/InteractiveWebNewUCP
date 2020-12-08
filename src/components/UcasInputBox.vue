@@ -16,13 +16,16 @@
         />
       </div>
       <div class="column is-half select">
-        <select class="gradeSelect">
-          <option value="grade1">A*</option>
-          <option value="grade1">A</option>
-          <option value="grade1">B</option>
-          <option value="grade1">C</option>
-          <option value="grade1">D</option>
-          <option value="grade1">E</option>
+        <select class="gradeSelect" v-on:change="changed($event)">
+          <option value="as">A*</option>
+          <option value="a">A</option>
+          <option value="b">B</option>
+          <option value="c">C</option>
+          <option value="d">D</option>
+          <option value="e">E</option>
+          <option value="pass">Pass</option>
+          <option value="merit">Merit</option>
+          <option value="distinction">Distinction</option>
         </select>
       </div>
     </div>
@@ -32,7 +35,19 @@
 <script>
 export default {
   el: "#ucasBox",
-  name: "UcasInputBox"
+  name: "UcasInputBox",
+  data() {
+    return {
+      selected: "",
+      previousSelected: ""
+    }
+  },
+  methods: {
+    changed(event) {
+      this.previousSelected = this.selected;
+      this.selected = event.target.value;
+    }
+  }
 };
 </script>
 

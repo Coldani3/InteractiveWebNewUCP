@@ -36,7 +36,6 @@ export default {
   },
   methods: {
     onSearch(data) {
-      console.log("Title: " + this.title.toString());
       if (
         !this.title
           .toLowerCase()
