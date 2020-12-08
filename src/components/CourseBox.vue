@@ -1,5 +1,5 @@
 <template>
-  <a v-bind:href="courseLink" class="link">
+  <a v-bind:href="courseLink" class="link" v-if="visible">
     <div class="box columns mainDiv" id="courseBox">
       <div class="column is-narrow imgDiv">
         <img src="" alt="Image" />
@@ -13,6 +13,8 @@
 </template>
 
 <script>
+import { eventBus, SearchUpdated } from "../EventBus.js";
+
 export default {
   el: "#courseBox",
   name: "CourseBox",
@@ -21,6 +23,30 @@ export default {
     courseDescription: String,
     courseImage: String,
     courseLink: String
+  },
+  data() {
+    return {
+      visible: true
+    };
+  },
+  created() {
+    eventBus.on(SearchUpdated, this.onSearch);
+  },
+  methods: {
+    onSearch(data) {
+      console.log("Search: " + data.searchInput);
+      if (
+        !this.courseTitle
+          .toLowerCase()
+          .includes(
+            data.searchInput.toLowerCase() && data.searchInput.length > 0
+          )
+      ) {
+        this.visible = false;
+      } else {
+        this.visible = true;
+      }
+    }
   }
 };
 </script>
