@@ -30,6 +30,7 @@ import Banner from "../components/Banner.vue";
 import NavBar from "../components/NavBar.vue";
 import UcasInputBox from "../components/UcasInputBox.vue";
 import { eventBus, NavBarUpdate } from "../EventBus.js";
+import { ucasCalculator } from "../UcasCalculator.js";
 
 export default {
   name: "UcasPage",
@@ -43,6 +44,9 @@ export default {
       ucasCount: 1,
       calculate: false
     };
+  },
+  created() {
+    ucasCalculator.reset();
   },
   methods: {
     addNewUcas() {

@@ -33,19 +33,34 @@
 </template>
 
 <script>
+import { ucasCalculator } from "../UcasCalculator.js";
+
 export default {
   el: "#ucasBox",
   name: "UcasInputBox",
   data() {
     return {
       selected: "",
-      previousSelected: ""
+      points: 0,
+      ucasID: 0,
+      pointsMap: {
+        "as": 56,
+        "a": 48,
+        "b": 40,
+        "c": 32,
+        "d": 24,
+        "e": 16,
+      }
     }
+  },
+  created() {
+    this.ucasID = ucasCalculator.generateID();
   },
   methods: {
     changed(event) {
-      this.previousSelected = this.selected;
       this.selected = event.target.value;
+      this.points = this.pointsMap[this.selected];
+      ucasCalculator.updateValue(this.ucasID, this.points);
     }
   }
 };
