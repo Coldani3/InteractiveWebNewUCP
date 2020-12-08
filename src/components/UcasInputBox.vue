@@ -23,9 +23,16 @@
           <option value="c">C</option>
           <option value="d">D</option>
           <option value="e">E</option>
-          <option value="pass">Pass</option>
-          <option value="merit">Merit</option>
-          <option value="distinction">Distinction</option>
+          <option value="ds3">D*D*D*</option>
+          <option value="ds2d">D*D*D</option>
+          <option value="dsd2">D*DD</option>
+          <option value="d3">DDD</option>
+          <option value="d2m">DDM</option>
+          <option value="dm2">DMM</option>
+          <option value="m3">MMM</option>
+          <option value="m2p">MMP</option>
+          <option value="mp2">MPP</option>
+          <option value="p3">PPP</option>
         </select>
       </div>
     </div>
@@ -50,6 +57,17 @@ export default {
         "c": 32,
         "d": 24,
         "e": 16,
+        "ds3": 168,
+        "ds2d": 160,
+        "dsd2": 152,
+        "d3": 144,
+        "d2m": 128,
+        "dm2": 112,
+        "m3": 96,
+        "m2p": 80,
+        "mp2": 64,
+        "p3": 48
+
       }
     }
   },
