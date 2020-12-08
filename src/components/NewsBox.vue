@@ -5,14 +5,14 @@
     </header>
     <article class="mainArticleBody" style="padding:4px;">
       <div class="columns">
-        <div class="column is-2">
+        <div class="column imageBox">
           <img
             class="articleImage"
             v-bind:src="image(imageSrc)"
             v-bind:alt="imageAltText"
           />
         </div>
-        <div class="column">
+        <div class="column articleBox">
           <p class="articleBody">{{ article }}</p>
         </div>
       </div>
@@ -49,8 +49,8 @@ export default {
 .articleImage {
   float: left;
   margin-right: 15px;
-  max-height: 150px;
-  max-width: 150px;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .mainArticleBody {
@@ -65,6 +65,10 @@ export default {
   padding: 4px;
 }
 
+.articleBox {
+  max-width: 100%;
+}
+
 .button {
   width: 200px;
   height: 30px;
@@ -72,6 +76,10 @@ export default {
 
 .button:hover {
   background-color: azure;
+}
+
+.imageBox {
+  max-width: 15%;
 }
 
 .mainBox {

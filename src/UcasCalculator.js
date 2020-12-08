@@ -13,7 +13,6 @@ class UcasCalculator {
   updateValue(id, currentValue) {
     this.totalPoints += (currentValue - this.prevVals[id]);
     this.prevVals[id] = currentValue;
-    console.log(this.totalPoints);
   }
 
   getPoints() {

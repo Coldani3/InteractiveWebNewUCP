@@ -12,6 +12,7 @@
       |
       <a href="login.html"><img class="far fa-user-circle" /> Staff Login</a>
     </div>
+    <hr />
   </div>
 </template>
 
@@ -38,5 +39,10 @@ export default {
   border-top-right-radius: 0;
   border-top-left-radius: 0;
   border-bottom-right-radius: 0;
+}
+
+hr {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 </style>

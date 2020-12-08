@@ -17,6 +17,7 @@
       </div>
       <div class="column is-half select">
         <select class="gradeSelect" v-on:change="changed($event)">
+          <option value="" selected="selected" disabled>Select Grade</option>
           <option value="as">A*</option>
           <option value="a">A</option>
           <option value="b">B</option>
