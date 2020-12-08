@@ -16,6 +16,10 @@
           v-on:click="addNewUcas()"
           class="button is-rounded teal-text addUcasButton"
         >+</button>
+        <button v-on:click="calculateUCAS()" class="button is-rounded">Calculate</button>
+        <div>
+          <!-- Generated results -->
+        </div>
       </div>
     </div>
   </div>
@@ -36,13 +40,17 @@ export default {
   },
   data() {
     return {
-      ucasCount: 1
+      ucasCount: 1,
+      calculate: false
     };
   },
   methods: {
     addNewUcas() {
       this.ucasCount++;
       eventBus.emit(NavBarUpdate);
+    },
+    calculateUCAS() {
+      this.calculate = true;
     }
   }
 };

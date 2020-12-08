@@ -1,12 +1,13 @@
 <template>
-  <a v-bind:href="courseLink" class="link" v-if="visible">
+  <a v-bind:href="link" class="link" v-if="visible">
     <div class="box columns mainDiv" id="courseBox">
       <div class="column is-narrow imgDiv">
-        <img src="" alt="Image" />
+        <img v-bind:src="image" alt="Image" />
       </div>
       <div class="column">
-        <p class="title">{{ courseTitle }}</p>
-        <p>{{ courseDescription }}</p>
+        <p class="title">{{ title }}</p>
+        <p class="subtitle">UCAS Points: {{ ucasPoints }}</p>
+        <p>{{ description }}</p>
       </div>
     </div>
   </a>
@@ -19,10 +20,11 @@ export default {
   el: "#courseBox",
   name: "CourseBox",
   props: {
-    courseTitle: String,
-    courseDescription: String,
-    courseImage: String,
-    courseLink: String
+    title: String,
+    description: String,
+    image: String,
+    link: String,
+    ucasPoints: Number
   },
   data() {
     return {
@@ -34,9 +36,9 @@ export default {
   },
   methods: {
     onSearch(data) {
-      console.log("Search: " + data.searchInput);
+      console.log("Title: " + this.title.toString());
       if (
-        !this.courseTitle
+        !this.title
           .toLowerCase()
           .includes(data.searchInput.toLowerCase()) &&
         data.searchInput.length > 0

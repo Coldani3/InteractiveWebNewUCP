@@ -6,31 +6,47 @@
       </div>
       <input type="text" id="searchBar" class="searchBar" />
     </div>
-    <div class="boxed resultsBox" v-bind:style="{ height: searchResultsHeight }">
+    <div
+      class="boxed resultsBox"
+      v-bind:style="{ height: searchResultsHeight }"
+    >
       <CourseBox
-        course-title="Jim John's Jamboree"
-        course-description="Lorem ipsum"
-        course-image=""
-        course-link="index.html"
+        v-for="{name, description, image, link, ucasPoints} in courses"
+        v-bind:key="name"
+        :title="name"
+        :description="description"
+        :image="image"
+        :link="link"
+        :ucas-points="ucasPoints"
+      />
+      <!-- <CourseBox
+        v-bind:title="name"
+        v-bind="data"
+      /> -->
+      <!--<CourseBox
+        title="Jim John's Jamboree"
+        description="Lorem ipsum"
+        image=""
+        link="index.html"
       />
       <CourseBox
-        course-title="Lux"
-        course-description="Lorem ipsum"
-        course-image=""
-        course-link="index.html"
+        title="Lux"
+        description="Lorem ipsum"
+        image=""
+        link="index.html"
       />
       <CourseBox
-        course-title="Juj"
-        course-description="Lorem ipsum"
-        course-image=""
-        course-link="index.html"
+        title="Juj"
+        description="Lorem ipsum"
+        image=""
+        link="index.html"
       />
       <CourseBox
-        course-title="Sample Text"
-        course-description="Lorem ipsum"
-        course-image=""
-        course-link="index.html"
-      />
+        title="Sample Text"
+        description="Lorem ipsum"
+        image=""
+        link="index.html"
+      />-->
     </div>
   </div>
 </template>
@@ -49,9 +65,24 @@ export default {
     return {
       searching: true,
       searchResultsHeight: "10em",
-      courses: {
-        
-      }
+      courses: [
+        {
+          name: "BSc (Hons) Accounting and Finance",
+          description:
+            "This course includes a wide range of skills identified by both employers and the Association of Chartered Certified Accountants (ACCA) as being important for accountancy and finance graduates in the 21st century.",
+          ucasPoints: 100,
+          link: "index.html",
+          image: ""
+        },
+        {
+          name: "BA (Hons) Criminology",
+          description:
+            "Are you interested in the problem of crime in contemporary societies? If so, our Criminology course may be for you. As a Criminology student, you will investigate the nature of crime and criminality as well as studying societies response through the criminal justice system. You’ll learn about the social and personal impacts of crime and what it means to be a victim of crime.",
+          ucasPoints: 110,
+          link: "index.html",
+          image: ""
+        }
+      ]
     };
   },
   methods: {
