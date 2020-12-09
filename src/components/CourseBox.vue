@@ -1,9 +1,9 @@
 <template>
   <a v-bind:href="link" class="link" v-if="visible">
     <div class="box columns mainDiv" id="courseBox">
-      <div class="column is-narrow imgDiv">
-        <img v-bind:src="image" alt="Image" />
-      </div>
+      <!-- <div class="column is-narrow imgDiv">
+        <img v-bind:src="getImage(image)" alt="Image" />
+      </div> -->
       <div class="column">
         <p class="title">{{ title }}</p>
         <p class="subtitle">UCAS Points: {{ ucasPoints }}</p>
@@ -15,6 +15,7 @@
 
 <script>
 import { eventBus, SearchUpdated } from "../EventBus.js";
+import { getImageURL } from "../util.js";
 
 export default {
   el: "#courseBox",
@@ -22,7 +23,6 @@ export default {
   props: {
     title: String,
     description: String,
-    image: String,
     link: String,
     ucasPoints: Number
   },
@@ -46,6 +46,9 @@ export default {
       } else {
         this.visible = true;
       }
+    },
+    getImage(imageURL) {
+      return getImageURL(imageURL);
     }
   }
 };

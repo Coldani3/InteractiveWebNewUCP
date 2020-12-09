@@ -11,11 +11,10 @@
       v-bind:style="{ height: searchResultsHeight }"
     >
       <CourseBox
-        v-for="{name, description, image, link, ucasPoints} in courses"
+        v-for="{name, description, link, ucasPoints} in courses"
         v-bind:key="name"
         :title="name"
         :description="description"
-        :image="image"
         :link="link"
         :ucas-points="ucasPoints"
       />

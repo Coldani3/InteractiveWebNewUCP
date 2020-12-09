@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 <template>
   <div class="fullHeight">
     <Banner />
@@ -7,14 +8,13 @@
       </div>
       <div class="column">
         <div class="box mainBox">
-          <img v-bind:src="image" alt="Course Image" />
           <p class="title">{{ title }}</p>
-          <p class="subtitle">RequiredUCAS Points: {{ ucasPoints }}</p>
+          <p class="subtitle">Required UCAS Points: {{ ucasPoints }}</p>
           <a href="contact.html">Don't meet the requirements? Don't worry, contact us for help!</a>
           <br />
           <br />
           <div v-for="descriptionLine in description" v-bind:key="descriptionLine">
-            <p style="margin-bottom:10px;">{{ descriptionLine }}</p>
+            <p style="margin-bottom:10px;" v-html="descriptionLine"></p>
           </div>
         </div>
       </div>
@@ -36,7 +36,6 @@ export default {
   mounted() {
     eventBus.emit(NavBarUpdate);
     let id = parseInt(new URL(window.location.href).searchParams.get("courseID"));
-    console.log(id);
 
     if (id != null) {
       this.courseId = id;
@@ -51,7 +50,6 @@ export default {
           this.description.push("Students will be encouraged to be active learners whose knowledge and understanding is gained through the support of academic staff, who will act as mentors, rather than ‘lecturers’. Industry specialists are invited to lectures and again they will not be seen purely as ‘guest lecturers’, but as part of the university community.");
           this.title = "BSc (Hons) Accounting and Finance";
           this.ucasPoints = 100;
-          this.image = "";
           break;
         
         case 2:
@@ -64,7 +62,6 @@ export default {
           this.description.push("At the Stamford campus, you will have access to a range of species housed in the on-site Animal Studies Unit and develop necessary skills in animal management and husbandry. The Animal Studies Unit includes a range of small mammals, reptiles, amphibians, fish and invertebrates, as well as a bespoke nocturnal room and a large outside area housing rabbits, guinea pigs, ferrets, birds, marmosets and meerkats.");
           this.title = "HNC/HND Animal Management (Animal Behaviour and Welfare)";
           this.ucasPoints = 45;
-          this.image = "";
           break;
 
         case 3:
@@ -76,7 +73,6 @@ export default {
           this.description.push("When you graduate you will be able to design, plan, safely conduct, record and report on investigations using primary or secondary data. You will be able to obtain, record, collate, evaluate and analyse data using appropriate techniques in the field and/or laboratory, working individually or in a team. You will also understand sample selection, along with how to record and analyse data.");
           this.title = "BSc (Hons) Biological Sciences";
           this.ucasPoints = 110;
-          this.image = "";
           break;
 
         case 4:
@@ -86,7 +82,6 @@ export default {
           this.description.push("Students will be able to perform effectively in their chosen field and will have the qualities necessary for employment in situations requiring the exercise of personal responsibility and decision-making. Furthermore, graduates will have developed a range of transferable skills to ensure effective team working, independent initiatives, organisational competence and problem-solving strategies. They will be adaptable and flexible in their approach to computing, show resilience under pressure, and meet challenging targets within a given resource.");
           this.title = "HND Computing";
           this.ucasPoints = 55;
-          this.image = "";
           break;
 
         case 5:
@@ -98,7 +93,6 @@ export default {
           this.description.push("At Level 6, students will have a knowledge of lean and value management, and new exciting modules on environment and sustainability. The Undergraduate Project provides a platform for students to work independently to develop expertise in a specified area that can deliver design solutions for a construction project.");
           this.title = "BSc (Hons) Construction";
           this.ucasPoints = 100;
-          this.image = "";
           break;
 
         case 6:
@@ -110,7 +104,6 @@ export default {
           this.description.push("You will have the opportunity to undertake a live research project with a range of local partners and undertake research that makes a material difference to people’s lives. This will enable you to graduate not just with a good degree but a range of real world experience which will help you progress into your desired career.");
           this.title = "BA (Hons) Criminology";
           this.ucasPoints = 110;
-          this.image = "";
           break;
 
         case 7:
@@ -121,7 +114,6 @@ export default {
           this.description.push("Throughout the course you will be supported in developing your professional profile and your entrepreneurial skills to ensure a smooth transition to professional employment. All students completing the course will have a portfolio of work (physical and digital) to show to prospective employers and you will have multiple opportunities on the course to develop your network of professional contacts.");
           this.title = "FdA Digital Arts";
           this.ucasPoints = 45;
-          this.image = "";
           break;
 
         case 8:
@@ -131,7 +123,6 @@ export default {
           this.description.push("Within the course you will explore topical issues relating to education and society; raising achievement through inclusion and look at the underlying principles of the educational system. The course looks at educational issues at various life stages rather than concentrating on a single phase. This will give you the opportunity to become aware of, and investigate educational issues of particular personal interest and related to your career aspirations.");
           this.title = "BA (Hons) Education Studies (Top-up)";
           this.ucasPoints = 100;
-          this.image = "";
           break;
 
         case 9:
@@ -146,7 +137,6 @@ export default {
           this.description.push("These qualifications are taught at Peterborough College and offer full-time and part-time study options.");
           this.title = "HNC Engineering (Electrical and Electronic)";
           this.ucasPoints = 55;
-          this.image = "";
           break;
 
         case 10:
@@ -157,7 +147,6 @@ export default {
           this.description.push("The degree runs an annual Literary Festival featuring established authors and poets. These popular events are free for students and members of the public to attend.");
           this.title = "BA (Hons) English Literature";
           this.ucasPoints = 100;
-          this.image = "";
           break;
 
         case 11:
@@ -168,7 +157,6 @@ export default {
           this.description.push("Our lecturers have first-hand experience of crime scene analysis, policing and criminal justice. As well as benefiting from their knowledge, you will have guest lectures from visiting professionals and get an understanding of the workplace through visits to places such as the Crown Court, and other field trips. The course has close links with Cambridgeshire Constabulary and we ensure that you learn from industry experts.");
           this.title = "BSc (Hons) Forensic Investigation";
           this.ucasPoints = 110;
-          this.image = "";
           break;
 
         case 12:
@@ -180,7 +168,6 @@ export default {
           this.description.push("The greater Peterborough area is steeped in history which includes Bronze Age sites at Flag Fen and Must Farm as well as the Peterborough Cathedral which is over 900 years old.");
           this.title = "BA (Hons) History and Archaeology";
           this.ucasPoints = 100;
-          this.image = "";
           break;
 
         case 13:
@@ -192,7 +179,6 @@ export default {
           this.description.push("You will have the opportunity to undertake a live research project with a range of local partners and undertake research that makes a real difference to the life of the city and the broader region. This will enable you to graduate not just with a good degree but a range of real world experience which will help you progress into your desired career.");
           this.title = "BA (Hons) Psychosocial Studies";
           this.ucasPoints = 110;
-          this.image = "";
           break;
 
         case 14:
@@ -203,7 +189,6 @@ export default {
           this.description.push("<strong>The 2019 National Student Survey (NSS) which measures student satisfaction on courses had a NSS results of 100% for the Sociology degree.</strong>");
           this.title = "BA (Hons) Sociology";
           this.ucasPoints = 110;
-          this.image = "";
           break;
 
         case 15:
@@ -216,7 +201,6 @@ export default {
           this.description.push("<strong>The 2019 National Student Survey (NSS) which measures student satisfaction on courses had a NSS results of 100% for the Sport and Exercise Science degree.</strong>");
           this.title = "BSc (Hons) Sport and Exercise Science";
           this.ucasPoints = 100;
-          this.image = "";
           break;
       }
 
@@ -229,7 +213,6 @@ export default {
       title: "",
       //Array of description
       description: [],
-      image: "",
       ucasPoints: 0
     };
   }
