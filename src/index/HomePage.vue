@@ -7,7 +7,7 @@
       </div>
       <div class="column main geometric-bg fullMinHeight">
         <div class="ucpImage">
-          <img style="height:400px;" src="@/assets/A19_7794_YES.jpg" />
+          <img style="height:400px; margin-top:4px;" src="@/assets/A19_7794_YES.jpg" />
         </div>
         <div>
           <NewsBox

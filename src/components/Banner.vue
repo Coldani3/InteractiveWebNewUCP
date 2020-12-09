@@ -32,6 +32,7 @@ export default {
 
 .bannerImage {
   max-height: 100%;
+  max-width: 66%;
 }
 
 .loginSection {
@@ -44,5 +45,8 @@ export default {
 hr {
   margin-top: 0;
   margin-bottom: 0;
+  background-color: darkslategray;
+  height: 1px;
+  border-width: 1px;
 }
 </style>

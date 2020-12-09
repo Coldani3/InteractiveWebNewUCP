@@ -94,7 +94,7 @@ export default {
 }
 
 .headerBox {
-  height: 50px;
+  min-height: 50px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   padding: 4px;
