@@ -9,69 +9,41 @@
         <div class="box">
           <!-- COVID Information goes here -->
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mi
-            dui, imperdiet vitae magna nec, gravida maximus tortor. In hac
-            habitasse platea dictumst. Quisque vestibulum nibh non maximus
-            posuere. Morbi nisl lacus, pellentesque vitae arcu eget, pulvinar
-            dignissim odio. Phasellus porta risus tortor. Vestibulum ante ipsum
-            primis in faucibus orci luctus et ultrices posuere cubilia curae;
-            Praesent sapien ligula, gravida eu faucibus vitae, semper ac orci.
-            Sed cursus congue elit eu volutpat. Ut molestie blandit vehicula.
-            Vestibulum sed ex ipsum. Integer ac massa ac justo finibus eleifend
-            sit amet et mi. Mauris nec sem vitae sem iaculis lacinia. In vitae
+            Following the Prime Minister’s address on 22 September 2020 and the new restrictions that are to be implemented in England, we are taking some further actions to mitigate the risks of COVID-19 infections. These actions are important as we continue to prioritise the health and safety of our staff and students. We are also taking these actions to minimise the impact and disruption to learning and working of others following a confirmed case. Therefore from Monday 28 September 2020:
           </p>
           <br />
           <p>
-            In vitae euismod dui. Nullam suscipit massa efficitur rutrum
-            fermentum. Pellentesque metus purus, ultrices vel dapibus a, congue
-            eu dui. In mauris justo, ullamcorper in elit quis, tincidunt
-            volutpat turpis. Nullam porta pretium elit a porta. Phasellus quis
-            facilisis quam. Praesent ut posuere urna. Vestibulum sit amet
-            sagittis dui, ut fringilla velit. Curabitur placerat urna a velit
-            ultricies sollicitudin. Suspendisse ac egestas libero. Pellentesque
-            et sapien libero. Morbi vitae vehicula felis. Proin quis mattis
-            risus. Nulla a elit id metus dignissim auctor. Integer lobortis
-            vestibulum fringilla. Aenean ac convallis massa.
+            <strong>&gt; Face coverings or visors are to be worn indoors at all times by staff and students (unless you are working on your own / independently away from others)</strong>
           </p>
           <br />
           <p>
-            Vestibulum rhoncus, odio non ultrices ullamcorper, magna sapien
-            feugiat sem, sed volutpat lectus lectus et lectus. Duis hendrerit
-            luctus odio vitae placerat. Vivamus laoreet vestibulum sodales.
-            Vestibulum congue urna vitae lectus ultrices iaculis. In eget nulla
-            hendrerit purus rhoncus dictum. Phasellus tristique aliquet
-            eleifend. Pellentesque porta ex quis faucibus fermentum. Donec et
-            lacinia lorem. Etiam viverra congue vestibulum. Duis nisi odio,
-            lacinia sed ante ut, convallis dignissim justo. Donec facilisis et
-            odio quis tempor. Donec ac lobortis magna. Quisque eget turpis eros.
-            Duis sollicitudin in purus tincidunt laoreet. Proin tincidunt nisi
-            ac velit facilisis egestas. Sed vitae gravida velit.
+            All students are reminded that there is extensive information on the UCP’s website, including the ‘FAQ for students before starting in September 2020’ which you can access using the link below.
           </p>
           <br />
           <p>
-            Vivamus sit amet scelerisque nunc, ac malesuada urna. Donec magna
-            libero, molestie mattis bibendum posuere, placerat eu odio.
-            Suspendisse id libero elit. Vivamus facilisis nunc sed commodo
-            dapibus. Proin sed feugiat felis. Proin ac velit tellus. Nunc vel
-            turpis a massa fermentum accumsan. Maecenas tempor mauris at ante
-            laoreet, vitae rhoncus orci aliquam. Curabitur placerat massa ut
-            accumsan congue. Mauris sollicitudin felis a dui mattis, non
-            hendrerit ante placerat. Donec non nibh lacus. Donec lectus est,
-            condimentum eu ullamcorper at, dignissim quis tellus. Nunc nec
-            molestie metus. Cras ac convallis orci. In euismod consectetur
-            posuere.
+            <strong>&gt;</strong> <a href="www.ucp.ac.uk/faq-for-students-before-starting-in-september-2020">www.ucp.ac.uk/faq-for-students-before-starting-in-september-2020</a>
           </p>
           <br />
           <p>
-            Morbi ultricies dui purus, nec fringilla dui elementum a. Integer
-            sit amet viverra magna, a lacinia sem. Mauris quis porttitor urna.
-            Integer vehicula tristique purus gravida egestas. Vestibulum
-            tristique, massa porttitor cursus dignissim, tellus quam mollis
-            erat, quis lacinia ante tortor at enim. Nunc ut urna magna.
-            Curabitur dignissim sit amet eros nec feugiat. Aliquam molestie
-            ullamcorper feugiat. In quis consectetur turpis. Vivamus malesuada
-            vehicula dui nec tristique.
+            <strong>IMPORTANT</strong> – Students must notify us if
           </p>
+          <br />
+          <p><strong>&gt;</strong> You have COVID symptoms</p>
+          <p><strong>&gt;</strong> You have been contacted by NHS Track and Trace and told to self-isolate e.g. because a member of your household has had a positive test</p>
+          <p><strong>&gt;</strong> You have had a positive test result</p>
+          <br />
+          <p><strong>IMPORTANT -</strong> All students are reminded of the following:</p>
+          <br />
+          <p><strong>&gt;</strong> Follow social distancing protocols – 2 metre distance where possible, 1 metre within classrooms and workshops</p>
+          <p><strong>&gt;</strong> Regularly wash your hands and use hand sanitizer</p>
+          <p><strong>&gt;</strong> Follow directional signage around campus</p>
+          <p><strong>&gt;</strong> Do not cross geographical bubbles</p>
+          <br />
+          <p>For students on the BA (Hons) Sport &amp; Exercise Science, we are awaiting further guidance on whether there are further mitigations and actions we need to take following the new restrictions. Your tutors will discuss these with you should the need arise.</p>
+          <br />
+          <p>Finally, see below a letter from NHS and Public Health Senior Officials. The letter reminds us all of COVID symptoms, when to get a test and the rules around self-isolation. Please see the link below to access this letter.</p>
+          <br />
+          <a class="button" href="https://ucp-live.storage.googleapis.com/upload/www.ucp.ac.uk/news/23rd%20September%20-%20PHE%20letter%20to%20parents%20and%20guardians.pdf?inline=true">Download</a>
         </div>
         <p class="subtitle">Official Links:</p>
         <div class="box">

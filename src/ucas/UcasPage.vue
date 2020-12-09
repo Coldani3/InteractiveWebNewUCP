@@ -12,11 +12,11 @@
         />
         <button
           v-on:click="addNewUcas()"
-          class="button is-rounded teal-text addUcasButton"
+          class="button is-rounded addUcasButton peach"
         >+</button>
         <br />
         <br />
-        <button v-on:click="calculateUCAS()" class="button is-rounded">Calculate</button>
+        <button v-on:click="calculateUCAS()" class="button is-rounded peach">Calculate</button>
         <div v-if="calculate">
           <p class="subtitle">Your UCAS Points: {{ ucasPoints() }}</p>
           <!-- Generated results -->
