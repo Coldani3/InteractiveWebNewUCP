@@ -9,10 +9,16 @@
         <div class="box">
           <h1 class="title">Contact Us!</h1>
           <h2 class="subtitle">Telephone:</h2>
-          <p>12345 678910</p>
+          <p>01733 214466</p>
           <br />
           <h2 class="subtitle">Email:</h2>
           <p>support@peterborough.ac.uk</p>
+          <br />
+          <h2 class="subtitle">Address:</h2>
+          <p>University Centre Peterborough</p>
+          <p>Park Crescent Campus</p>
+          <p>Peterborough, Cambridgeshire</p>
+          <p>PE1 4DZ</p>
         </div>
       </div>
     </div>
