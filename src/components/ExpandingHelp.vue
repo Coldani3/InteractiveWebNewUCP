@@ -5,24 +5,29 @@
       v-on:click="toggleExpanded()"
       v-bind:class="{ titleOnExpanded: expanded, teal: !hover }"
       v-on:hover="hoverToggle()"
+      v-bind:style="height()"
     >
       <p class="subtitle whiteText">{{ title }}</p>
     </div>
     <div class="box expandedBox" v-if="expanded">
-      <p>{{ contents }}</p>
+      <div v-for="line in contents" v-bind:key="line">
+        <p v-html="line"></p>
+        <br />
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-import { eventBus, ExpandingHelpPressed } from "../EventBus.js";
+import { eventBus, ExpandingHelpPressed, NavBarUpdate } from "../EventBus.js";
 
 export default {
   el: "#expandingHelp",
   name: "LoginBox",
   props: {
     title: String,
-    contents: String
+    contents: Array,
+    tall: Boolean
   },
   data() {
     return {
@@ -33,17 +38,29 @@ export default {
   created() {
     eventBus.on(ExpandingHelpPressed, this.unexpand);
   },
+  mounted() {
+    eventBus.emit(NavBarUpdate);
+  },
   methods: {
     toggleExpanded() {
-      eventBus.emit(ExpandingHelpPressed);
+      eventBus.emit(ExpandingHelpPressed, { sender: this });
+      eventBus.emit(NavBarUpdate);
       this.expanded = !this.expanded;
-      //setTimeout(function() {  }, 50);
     },
-    unexpand() {
-      this.expanded = false;
+    unexpand(data) {
+      if (data.sender != this) {
+        this.expanded = false;
+      }
     },
     hoverToggle() {
       this.hover = !this.hover;
+    },
+    height() {
+      if (this.tall) {
+        return "{ min-height: 2em }";
+      } else {
+        return "{ height: 2em }";
+      }
     }
   }
 };
@@ -56,8 +73,8 @@ export default {
 }
 
 .titleBox {
-  padding-top: 2px;
-  height: 2em;
+  padding-top: 6px;
+  height: auto;
 }
 
 .titleBox:hover {

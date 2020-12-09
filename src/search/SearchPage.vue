@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="fullHeight">
     <Banner />
-    <div class="columns">
+    <div class="columns fullHeight">
       <div class="column is-narrow">
         <NavBar />
       </div>
@@ -21,6 +21,7 @@
 import Banner from "../components/Banner.vue";
 import NavBar from "../components/NavBar.vue";
 import CourseSearch from "../components/CourseSearch.vue";
+import { eventBus, NavBarUpdate } from "../EventBus.js";
 
 export default {
   name: "SearchPage",
@@ -28,6 +29,9 @@ export default {
     Banner,
     NavBar,
     CourseSearch
+  },
+  mounted() {
+    eventBus.emit(NavBarUpdate);
   }
 };
 </script>
