@@ -8,6 +8,8 @@
       <div class="column">
         <h1 class="title">Search for Course</h1>
         <a href="ucas.html">Ucas Calculator</a>
+        <br />
+        <a href="contact.html">Don't meet the requirements? Don't worry, contact us for help!</a>
         <br /><br />
         <CourseSearch />
       </div>

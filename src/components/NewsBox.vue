@@ -26,6 +26,7 @@
 
 <script>
 import { getImageURL } from "../util.js";
+import { eventBus, NavBarUpdate } from "../EventBus.js";
 
 export default {
   el: "#newsBox",
@@ -36,6 +37,9 @@ export default {
     article: String,
     imageSrc: String,
     imageAltText: String
+  },
+  mounted() {
+    eventBus.emit(NavBarUpdate);
   },
   methods: {
     image(url) {

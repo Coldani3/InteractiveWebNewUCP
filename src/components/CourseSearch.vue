@@ -19,34 +19,6 @@
         :link="link"
         :ucas-points="ucasPoints"
       />
-      <!-- <CourseBox
-        v-bind:title="name"
-        v-bind="data"
-      /> -->
-      <!--<CourseBox
-        title="Jim John's Jamboree"
-        description="Lorem ipsum"
-        image=""
-        link="index.html"
-      />
-      <CourseBox
-        title="Lux"
-        description="Lorem ipsum"
-        image=""
-        link="index.html"
-      />
-      <CourseBox
-        title="Juj"
-        description="Lorem ipsum"
-        image=""
-        link="index.html"
-      />
-      <CourseBox
-        title="Sample Text"
-        description="Lorem ipsum"
-        image=""
-        link="index.html"
-      />-->
     </div>
   </div>
 </template>

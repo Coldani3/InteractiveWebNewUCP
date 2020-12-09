@@ -9,8 +9,6 @@
         <UcasInputBox
           v-for="n in parseInt(ucasCount)"
           v-bind:key="n"
-          description="Lorem ipsum dolor"
-          courseTitle="Sample text"
         />
         <button
           v-on:click="addNewUcas()"

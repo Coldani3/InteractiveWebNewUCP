@@ -12,6 +12,7 @@
           <p class="subtitle">RequiredUCAS Points: {{ ucasPoints }}</p>
           <a href="contact.html">Don't meet the requirements? Don't worry, contact us for help!</a>
           <br />
+          <br />
           <div v-for="descriptionLine in description" v-bind:key="descriptionLine">
             <p style="margin-bottom:10px;">{{ descriptionLine }}</p>
           </div>
@@ -155,7 +156,7 @@ export default {
           this.description.push("In your final year you will undertake a dissertation project that will let you explore a topic of your choice. Students have proposed a wide range of topics in the past, from the vegetarian utopia of Shelley, via mental health, femininity and the supernatural in gothic fiction; representations of ‘The Oriental’ in Tintin; the links between hip-hop and poetry, through to dragons and their symbolic resonance in the fantasy genre.");
           this.description.push("The degree runs an annual Literary Festival featuring established authors and poets. These popular events are free for students and members of the public to attend.");
           this.title = "BA (Hons) English Literature";
-          this.ucasPoints = 0;
+          this.ucasPoints = 100;
           this.image = "";
           break;
 
@@ -165,62 +166,56 @@ export default {
           this.description.push("In the classroom, you will explore the investigative techniques used by police services, alongside contemporary issues including evidence based policing and crime prevention. You will also gain experience in dealing with a wide range of crime scenes, from burglaries to murders, including scenes of mass disaster and skeletal remains.");
           this.description.push("Learning about the criminal justice system in the UK, you will find out how your investigation of different crimes can have a significant impact, and how to report your investigative findings to other professional colleagues.");
           this.description.push("Our lecturers have first-hand experience of crime scene analysis, policing and criminal justice. As well as benefiting from their knowledge, you will have guest lectures from visiting professionals and get an understanding of the workplace through visits to places such as the Crown Court, and other field trips. The course has close links with Cambridgeshire Constabulary and we ensure that you learn from industry experts.");
-          this.description.push("");
-          this.description.push("");
           this.title = "BSc (Hons) Forensic Investigation";
-          this.ucasPoints = 0;
+          this.ucasPoints = 110;
           this.image = "";
           break;
 
         case 12:
-          this.description.push("");
-          this.description.push("");
-          this.description.push("");
-          this.description.push("");
-          this.description.push("");
-          this.description.push("");
-          this.description.push("");
+          this.description.push("Are you interested in the past and how it shapes the future? Are you fascinated by the history of your environment - of the buildings and landscapes that comprise it and the laws and institutions that animate it? Do you view the present as continuous with the past or do you see the past as a series of more or less violent ruptures leading up to the present? Are you passionate about the historical world and its importance for understanding the present? Are you interested in a career in the Heritage Industries – in a fast developing sector that contributes more to the UK economy than the Agricultural and Aerospace industries combined?");
+          this.description.push("If so our BA (Hons) History and Archaeology course may be for you. The course is a unique combination of history and archaeology modules designed to create an integral course that supports students that want to pursue careers in either discipline.");
+          this.description.push("We aimed to create a course that at one and the same time satisfies the intellectual curiosity of history/archaeology students while providing the best possible opportunity for progression into the graduate jobs market in education and teaching or the heritage sector.");
+          this.description.push("The course was developed in consultation with academics and industry professionals to ensure that the skills with which our students graduate align as closely as possible with the skills required by industry.");
+          this.description.push("During your studies you will have the opportunity to undertake a work placement with one of a range of heritage organisations in the city and wider region. These include Vivacity, Headland Archaeology, Oxford East Archaeology and Historic England.");
+          this.description.push("The greater Peterborough area is steeped in history which includes Bronze Age sites at Flag Fen and Must Farm as well as the Peterborough Cathedral which is over 900 years old.");
           this.title = "BA (Hons) History and Archaeology";
-          this.ucasPoints = 0;
+          this.ucasPoints = 100;
           this.image = "";
           break;
 
         case 13:
-          this.description.push("");
-          this.description.push("");
-          this.description.push("");
-          this.description.push("");
-          this.description.push("");
-          this.description.push("");
-          this.description.push("");
+          this.description.push("Do you ever wonder why people act in the way that they do or what makes you who you are? Would you like to understand the psychological factors and how this links up with broader society? Do you find yourself wondering what part of human behaviour is explained by nature and what part is down to the society we live in?");
+          this.description.push("If so then the BA (Hons) Psychosocial Studies course at University Centre Peterborough may be of interest to you. Psychosocial Studies is a unique subject that addresses both individual experiences and larger social processes. In the course you will be introduced to the core concepts that shape the discipline and the key tools with which to undertake social analysis and research.");
+          this.description.push("You will ponder the big questions relating to identity, wellbeing, ageing as well as broader questions relating to social justice like inequality and discrimination. You will also learn the skills of a social scientist, you will be capable of formulating research questions and investigating them on your own.");
+          this.description.push("You will undertake research independently and as a member of a group and you will gain an insight into the city and the wider region - the problems and challenges it faces and the ingenuity and energy with which it meets these.");
+          this.description.push("Finally you will hone in on your future career path testing your interests and skills working with local organisations and building your professional network for when you graduate.");
+          this.description.push("You will have the opportunity to undertake a live research project with a range of local partners and undertake research that makes a real difference to the life of the city and the broader region. This will enable you to graduate not just with a good degree but a range of real world experience which will help you progress into your desired career.");
           this.title = "BA (Hons) Psychosocial Studies";
-          this.ucasPoints = 0;
+          this.ucasPoints = 110;
           this.image = "";
           break;
 
         case 14:
-          this.description.push("");
-          this.description.push("");
-          this.description.push("");
-          this.description.push("");
-          this.description.push("");
-          this.description.push("");
-          this.description.push("");
+          this.description.push("If you are someone who is deeply curious about the world around you, and perhaps wants to explore ways to solve the important problems faced by society, then you might already be a sociologist. Sociology asks the big questions, for example those about racism, sexism, social class, culture, politics and the media. It objectively examines how societies change and what prompts these shifts. It also looks into various aspects of our lives: our work, our education, our relationships, our identities, in addition to the media we consume and the things we buy.");
+          this.description.push("Sociologists are also increasingly interested in the internet and the role it has in our lives: why are we addicted to our mobile phones, why do we post things on social media and what does the future hold when we have all this knowledge in our pockets? Ultimately, we want to identify solutions to the problems faced by society and then work towards changing the world for the better. Sociology is critical, engaging, interesting and, more often than not, fun.");
+          this.description.push("You will be introduced to the core concepts that shape the discipline and the key tools with which to undertake social analysis and research. You will ponder all these big sociological questions while developing as a social scientist who is capable of formulating research questions and investigating them on your own. This research will help you gain an insight into the city and the wider region - the problems and challenges it faces and the ingenuity and energy with which it meets these.");
+          this.description.push("Finally you will hone in on your future career path testing your interests and skills working with local organisations and building your professional network for when you graduate. You will have the opportunity to undertake live research projects with a range of local partners and undertake research that makes a significant difference to people’s lives. This will enable you to graduate not just with a good degree but a range of real world experiences which will enable you to progress onto your desired career.");
+          this.description.push("<strong>The 2019 National Student Survey (NSS) which measures student satisfaction on courses had a NSS results of 100% for the Sociology degree.</strong>");
           this.title = "BA (Hons) Sociology";
-          this.ucasPoints = 0;
+          this.ucasPoints = 110;
           this.image = "";
           break;
 
         case 15:
-          this.description.push("");
-          this.description.push("");
-          this.description.push("");
-          this.description.push("");
-          this.description.push("");
-          this.description.push("");
-          this.description.push("");
+          this.description.push("The BSc (Hons) Sport and Exercise Science degree will provide you with the skills and knowledge to prepare you for a career in sport, leisure or the health industry.");
+          this.description.push("This course follows a multi-disciplinary approach where you will study core modules such as physiology, performance analysis, coaching and psychology and learn about the interaction between these core disciplines as experienced in real life settings. You will develop a theoretical understanding of Sport and Exercise Science and be able apply it to practice.");
+          this.description.push("These scientific methods are explored with a specialised laboratory environment utilising the latest technology and analytical equipment in a small, friendly and supportive setting. As well as lectures at our Peterborough campus, students will use a state-of-the-art sports laboratory, gym facilities and sports hall at Peterborough College.");
+          this.description.push("Employability is a key theme and will be embedded into your modules. Throughout your studies you will gain significant experience in the sports industry working with sports teams and organisations such as Peterborough United Football Club, Peterborough Rowing Club and a variety of educational institutions. Previous students have worked in local schools as teaching assistants in PE lessons gaining valuable experience in teaching (an enhanced DBS check is required).");
+          this.description.push("In addition to your degree you will have opportunities to undertake additional qualifications as part of your degree to equip you with the skills and knowledge to be successful in your subject area.");
+          this.description.push("We hold annual sports conferences where you will learn and present emerging themes within the sport industry. Previous guests speakers include Mike Phelan (Manchester United Assistant Manager), Andy Etches (Director of Rezzil Virtual Reality) and Steve Gunn (GB Rowing Coach).");
+          this.description.push("<strong>The 2019 National Student Survey (NSS) which measures student satisfaction on courses had a NSS results of 100% for the Sport and Exercise Science degree.</strong>");
           this.title = "BSc (Hons) Sport and Exercise Science";
-          this.ucasPoints = 0;
+          this.ucasPoints = 100;
           this.image = "";
           break;
       }

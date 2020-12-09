@@ -11,16 +11,16 @@
         </div>
         <div>
           <NewsBox
-            title="Open Day at UCP"
-            full-article-link="https://google.com/"
-            article="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non venenatis libero, quis rhoncus dui. Nam ut elit at arcu sollicitudin rutrum non eget diam. Nunc pulvinar enim sed massa placerat ultrices. Cras et nisi at nunc fermentum feugiat non vel erat. Ut ultricies sem scelerisque tellus pretium sagittis. Curabitur iaculis tempor venenatis. Aliquam magna tellus, sodales et congue quis, elementum ut lorem. Donec vulputate, nunc et iaculis ornare, massa metus congue diam, vel tristique odio purus sed sapien. Nunc fermentum sapien sem, sed dapibus eros lacinia eget. Morbi aliquam eleifend tortor, eu sagittis eros aliquam vitae."
+            title="The Time Management Skills of a Not-So-Superwoman"
+            full-article-link="https://www.ucp.ac.uk/news/the-time-management-skills-of-a-not-so-superwoman/"
+            article="My day to other people often seems like part of a well organised machine that is on time, with all the right words in my head, answers at the ready and everything going to plan. My day to me seems like I’m peddling a unicycle uphill while juggling a pack of angry geese. I am currently in the second year of a full time English Literature degree with six children living at home. Every day I make it on time, and able to say anything remotely useful, is a definite win. I am currently working at a 1:1 and I am proud of this. I don’t have all the answers, but I’ve learned a few things about myself and how to manage my time effectively."
             image-src="Prospectus1.png"
             image-alt-text="Image 2"
           />
           <NewsBox
-            title="Local Man Shouts at Cloud"
+            title="Updated Covid-19 guidance for students"
             full-article-link="https://ucp.ac.uk/"
-            article="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non venenatis libero, quis rhoncus dui. Nam ut elit at arcu sollicitudin rutrum non eget diam. Nunc pulvinar enim sed massa placerat ultrices. Cras et nisi at nunc fermentum feugiat non vel erat. Ut ultricies sem scelerisque tellus pretium sagittis. Curabitur iaculis tempor venenatis. Aliquam magna tellus, sodales et congue quis, elementum ut lorem. Donec vulputate, nunc et iaculis ornare, massa metus congue diam, vel tristique odio purus sed sapien. Nunc fermentum sapien sem, sed dapibus eros lacinia eget. Morbi aliquam eleifend tortor, eu sagittis eros aliquam vitae."
+            article="Following the Prime Minister’s address on 22 September 2020 and the new restrictions that are to be implemented in England, we are taking some further actions to mitigate the risks of COVID-19 infections. These actions are important as we continue to prioritise the health and safety of our staff and students. We are also taking these actions to minimise the impact and disruption to learning and working of others following a confirmed case. Therefore from Monday..."
             image-src="logo.png"
             image-alt-text="Image"
           />
