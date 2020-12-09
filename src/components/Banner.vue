@@ -12,7 +12,7 @@
       |
       <a href="login.html"><img class="far fa-user-circle" /> Staff Login</a>
     </div>
-    <hr />
+    <!-- <hr /> -->
   </div>
 </template>
 

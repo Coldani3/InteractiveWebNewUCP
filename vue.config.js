@@ -47,6 +47,11 @@ module.exports = {
       entry: "./src/ucas/main.js",
       template: "public/ucas.html",
       filename: "ucas.html"
+    },
+    coursedetails: {
+      entry: "./src/coursedetails/main.js",
+      template: "public/coursedetails.html",
+      filename: "coursedetails.html"
     }
   }
 };
