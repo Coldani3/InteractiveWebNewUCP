@@ -9,10 +9,7 @@
         <div class="box">
           <h1 class="title">Need Help?</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam
-            explicabo porro atque illum, mollitia deserunt beatae iure enim
-            ipsum, alias, aspernatur labore! Consectetur totam nemo officia
-            repudiandae ducimus ipsam exercitationem!
+            <a href="contact.html">Contact us!</a>
           </p>
         </div>
       </div>
