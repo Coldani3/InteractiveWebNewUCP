@@ -2,11 +2,11 @@
   <div
     id="navBar"
     align="left"
-    class="dark-teal mainBox fullHeight"
+    class="dark-teal mainBox"
     v-bind:style="{ height: boxHeight, width: boxWidth }"
     v-on:update-navbar="updateHeight()"
   >
-    <div class="innerMainBox">
+    <div class="innerMainBox fullHeight">
       <div
         v-on:click="toggleDisplayed"
         class="button dark-teal hamburgerButton"
@@ -15,7 +15,7 @@
       </div>
       <hr class="darker-teal" />
 
-      <div class="linksBox" v-if="expanded">
+      <div class="linksBox" v-if="expanded" v-bind:styl="{ height: boxHeight }">
         <a v-for="(link, name) in links" v-bind:key="name" v-bind:href="link">
           <div class="linkBox">
             <p class="link">{{ name }}<br /></p>
@@ -62,13 +62,13 @@ export default {
       this.expanded = !this.expanded;
       this.boxHeight = this.getBoxHeightStyle();
       this.boxWidth = this.getBoxWidthStyle();
-      this.updateHeight;
+      this.updateHeight();
     },
     getBoxHeightStyle() {
       return this.expanded ? document.body.scrollHeight + "px" : "auto";
     },
     getBoxWidthStyle() {
-      return this.expanded ? "12em" : "auto";
+      return this.expanded ? "12em" : "3em";
     },
     getExpandedDefault() {
       return window.innerWidth > window.innerHeight;
@@ -90,9 +90,9 @@ export default {
 }
 
 .mainBox {
-  position: relative;
+  /* position: relative; */
   bottom: 0;
-  /* height: auto; */
+  display: inline-block;
 }
 
 .link {

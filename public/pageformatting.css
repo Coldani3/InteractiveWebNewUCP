@@ -29,3 +29,7 @@ html, body {
 .fullMinWidth {
     min-width: 100%;
 }
+
+.inline {
+    display: inline-block;
+}

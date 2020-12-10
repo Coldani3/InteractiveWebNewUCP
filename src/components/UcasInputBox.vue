@@ -2,8 +2,22 @@
   <div class="box" id="ucasBox">
     <div class="select fullWidth qualificationDiv">
       <select class="qualificationSelect">
-        <option value="val1">Sample Qual</option>
-        <option value="val2">Sample Qual 2</option>
+        <option disabled selected="selected">Select Course</option>
+        <option>GCSE English</option>
+        <option>GCSE Maths</option>
+        <option>GCSE Science</option>
+        <option>GCSE Information Technology</option>
+        <option>GCSE Spanish</option>
+        <option>GCSE French</option>
+        <option>GCSE German</option>
+        <option>GCSE Dance</option>
+        <option>GCSE Performing</option>
+        <option>GCSE Physical Education</option>
+        <option>BTEC Computing</option>
+        <option>BTEC Biology</option>
+        <option>BTEC Physics</option>
+        <option>BTEC Chemistry</option>
+        <option>BTEC Sports Science</option>
       </select>
     </div>
     <br />

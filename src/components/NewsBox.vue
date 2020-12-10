@@ -5,7 +5,7 @@
     </header>
     <article class="mainArticleBody" style="padding:4px;">
       <div class="columns">
-        <div class="column imageBox">
+        <div class="column imageBox is-two-fifths">
           <img
             class="articleImage"
             v-bind:src="image(imageSrc)"
@@ -66,6 +66,7 @@ export default {
 .articleBody {
   margin-bottom: 2px;
   min-height: 130px;
+  min-width: 40%;
   padding: 4px;
 }
 

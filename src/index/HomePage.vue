@@ -1,15 +1,16 @@
 <template>
   <div class="fullHeight">
     <Banner />
-    <div class="columns fullHeight">
-      <div class="column is-narrow fullHeight">
+    <div class="columns inline fullHeight">
+      <div class="column is-narrow inline fullHeight">
         <NavBar />
       </div>
-      <div class="column main geometric-bg fullMinHeight">
+      <div class="column main inline fullMinHeight">
         <div class="ucpImage">
           <img style="height:400px; margin-top:4px;" src="@/assets/A19_7794_YES.jpg" />
         </div>
         <div>
+          <p class="title">What do YOU want to do with your future?</p>
           <NewsBox
             title="The Time Management Skills of a Not-So-Superwoman"
             full-article-link="https://www.ucp.ac.uk/news/the-time-management-skills-of-a-not-so-superwoman/"
